@@ -1,0 +1,49 @@
+<resources>
+
+    <!--Styles por google-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Tema principal-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Styles por Cesar Uriel Coto Coazozon -->
+    <style name="cardViewIzquierda">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/paddinbottomcardizquierda_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_4dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/repple</item>
+        <item name="android:foreground">@drawable/repple</item>
+        <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
+        <item name="cardElevation">@dimen/carddimen_2dp</item>
+    </style>
+
+    <style name="cardViewDerecha">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimen_4dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/repple</item>
+        <item name="android:foreground">@drawable/repple</item>
+        <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
+        <item name="cardElevation">@dimen/carddimen_2dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

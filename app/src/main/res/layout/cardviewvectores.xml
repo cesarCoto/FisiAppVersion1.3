@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardViewVectores"
+    style="@style/cardViewDerecha">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_vectores">
+        
+        <ImageView
+            android:id="@+id/imagenVectores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+
+        <LinearLayout
+            android:layout_below="@id/imagenVectores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimenpadding_8dp"
+            android:background="@color/bgcolorwhite">
+            <TextView
+                android:id="@+id/textViewCardVectores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:text="Vecotres"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/bgcolorwhite"
+    app:cardCornerRadius="@dimen/carddimen_2dp"
+    app:cardElevation="@dimen/carddimen_2dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewDevelopersAboutActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16dp"
+            android:text="Desarrolladores"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+        <View
+            android:id="@+id/viewNum1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textViewDevelopersAboutActivity"
+            android:background="@color/bg_color"/>
+        <LinearLayout
+            android:id="@+id/linearLayoutName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewNum1"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:tint="#333"
+                    android:src="@drawable/ic_developer_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jose Manuel Coutiño Vazques"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:textStyle="italic"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutName1"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:tint="#333"
+                android:src="@drawable/ic_developer_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cesar Uriel Coto Coazozon"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linearLayoutName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutName2"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:tint="#333"
+            android:src="@drawable/ic_developer_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manuel de Jesus Coutiño Vazques"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

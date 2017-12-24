@@ -1,0 +1,21 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/marginBottomFragments"
+    android:background="@color/bg_color"
+    tools:context="com.example.cesar.aplicacionfisica.ExamenesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/examenesconversiones"/>
+        <include layout="@layout/examenesvectores"/>
+        <include layout="@layout/examenesmagnitudes"/>
+        <include layout="@layout/examenesleyesdenewton"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
