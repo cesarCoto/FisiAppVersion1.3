@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardVideoVectores"
+    style="@style/cardViewVideos">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layoutContentVectores"
+        style="@style/layoutCardVideos">
+
+        <ImageView
+            style="@style/imageViewCardVideos"
+            android:src="@drawable/vectores_img"/>
+
+        <TextView
+            style="@style/textViewCardVideos"
+            android:text="Vectores"/>
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/imageShareVectoresVideo"
+            style="@style/imageShareCardView"
+            android:layout_alignBottom="@id/layoutContentVectores" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

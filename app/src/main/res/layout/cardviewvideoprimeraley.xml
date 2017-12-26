@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardVideoPrimeraLey"
+    style="@style/cardViewVideos">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layoutContentPrimeraley"
+        style="@style/layoutCardVideos">
+
+        <ImageView
+            style="@style/imageViewCardVideos"
+            android:src="@drawable/primera_ley_new_img"/>
+
+        <TextView
+            style="@style/textViewCardVideos"
+            android:text="Ley de inercia"/>
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/imageSharePrimeraleyVideo"
+            style="@style/imageShareCardView"
+            android:layout_alignBottom="@id/layoutContentPrimeraley"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -2,15 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/dimen_8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginBottom="8dp"
-    android:background="@color/bgcolorwhite"
-    app:cardCornerRadius="@dimen/carddimen_2dp"
-    app:cardElevation="@dimen/carddimen_2dp">
+    style="@style/cardViewAboutActivity">
     
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,12 +10,8 @@
 
         <TextView
             android:id="@+id/textViewDrawablesAboutActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/dimen_16dp"
-            android:text="Imagenes e iconos"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"/>
+            style="@style/textTitleAboutActivity"
+            android:text="@string/imagenes_e_iconos_title"/>
 
         <View
             android:id="@+id/viewNum2"
@@ -31,167 +19,89 @@
             android:layout_height="1dp"
             android:layout_below="@id/textViewDrawablesAboutActivity"
             android:background="@color/bg_color"/>
-
         <LinearLayout
+            style="@style/itemAboutActivityAbout"
             android:id="@+id/linearPixabay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/viewNum2"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            android:layout_below="@id/viewNum2">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/pixabay_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pixabay"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/texto_pixabay"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearVectorsMarket"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/linearPixabay"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout"
+            android:layout_below="@id/linearPixabay">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/vectors_market_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vectors Market"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/vector_maker" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearFreepink"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/linearVectorsMarket"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout"
+            android:layout_below="@id/linearVectorsMarket">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/freepik_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FreePik"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/freepik" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearRoundIcons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/linearFreepink"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout"
+            android:layout_below="@id/linearFreepink">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/roundicons_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Roundicons"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/roundicons" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearPixelBuddha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/linearRoundIcons"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout"
+            android:layout_below="@id/linearRoundIcons">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/pixelbuddha_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pixel Buddha"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/pixel_buddha"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearSmashicons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_below="@id/linearPixelBuddha"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/smashicons_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Smashicons"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/smashicons" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearAndroddev"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/linearSmashicons"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout"
+            android:layout_below="@id/linearSmashicons">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/makerobot_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="AndroDev"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/androdev" />
         </LinearLayout>
     </RelativeLayout>
 </android.support.v7.widget.CardView>

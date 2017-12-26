@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:layout_margin="@dimen/dimen_4dp"
-                android:text="Conversiones"/>
+                android:text="@string/conversions_title"/>
         </LinearLayout>
     </RelativeLayout>
 </android.support.v7.widget.CardView>

@@ -2,64 +2,33 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/dimen_8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginBottom="8dp"
-    android:background="@color/bgcolorwhite"
-    app:cardCornerRadius="@dimen/carddimen_2dp"
-    app:cardElevation="@dimen/carddimen_2dp">
+    style="@style/cardViewAboutActivity">
     
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/linearLayoutBlog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="@dimen/dimen_16dp"
+                    style="@style/imageDrawAboutActivity"
                     android:src="@drawable/blogger_icon"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nustro Blog"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="@dimen/dimen_16dp"
-                    android:textStyle="italic"/>
+                    style="@style/textItemAboutActivity"
+                    android:text="@string/nuestro_blogg_title" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearLayoutName2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/linearLayoutBlog"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:background="?android:selectableItemBackground">
+            style="@style/itemAboutActivityAbout"
+            android:layout_below="@id/linearLayoutBlog">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
+                style="@style/imageDrawAboutActivity"
                 android:src="@drawable/dgti_icon"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CETis 82 Miguel Hidalgo y Costilla"
-                android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/dimen_16dp"
-                android:textStyle="italic"/>
+                style="@style/textItemAboutActivity"
+                android:text="@string/cestis"/>
         </LinearLayout>
     </RelativeLayout>
-
 </android.support.v7.widget.CardView>

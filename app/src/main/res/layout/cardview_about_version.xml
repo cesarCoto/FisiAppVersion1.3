@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/dimen_8dp"
-    android:layout_marginBottom="@dimen/dimen_8dp"
-    android:layout_marginLeft="@dimen/dimen_8dp"
-    android:layout_marginRight="@dimen/dimen_8dp"
-    app:cardCornerRadius="@dimen/carddimen_2dp"
-    app:cardElevation="@dimen/carddimen_2dp">
+    style="@style/cardViewAboutActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -37,8 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorAccent"
-                    android:text="FisiApp"
-                    android:textStyle="bold"/>
+                    android:text="@string/app_name"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -48,7 +40,7 @@
                     android:lineSpacingExtra="@dimen/dimen_8dp"
                     android:textColor="@color/colorAccent"
                     android:textStyle="italic"
-                    android:text="Version 1.3"/>
+                    android:text="@string/version_app"/>
         </RelativeLayout>
     </RelativeLayout>
 </android.support.v7.widget.CardView>

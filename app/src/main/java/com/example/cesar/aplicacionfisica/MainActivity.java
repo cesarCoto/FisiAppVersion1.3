@@ -2,7 +2,6 @@ package com.example.cesar.aplicacionfisica;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity{
                     transaction.replace(R.id.contenido,new ExamenesFragment()).commit();
                     return true;
                 case R.id.navigation_mas:
-
+                    transaction.replace(R.id.contenido,new VideosFragment()).commit();
                     return true;
             }
             return false;
@@ -83,12 +82,15 @@ public class MainActivity extends AppCompatActivity{
             case R.id.action_queHayDeNuevo:
                 //se crea un AletDialog y se asigna el contenido que este tendra
                 new AlertDialog.Builder(this)
-                .setTitle("¿Que hay de nuevo?"+"\n"+"Version 1.3")
-                .setMessage("*Nuevo diseño"+"\n"+"\n"+"*Menor peso"+ "\n"+ "\n"+"*Correccion de errores"+
-                        "\n"+"\n"+"*Verificacion de examen")
+                .setTitle(getString(R.string.version_app))
+                .setIcon(R.mipmap.ic_launcher)
+                .setMessage(getString(R.string.item_uno_carac)+"\n"+getString(R.string.item_dos_carac)+
+                        "\n"+getString(R.string.item_tres_carac)+"\n"+getString(R.string.item_cuatro_carac)+
+                        "\n"+getString(R.string.item_cinco_carac)+"\n"+getString(R.string.item_static))
+
                 /**Se crea un clickListener y se implementa al boton más en el dialogo para que este
                  * inicialize la Activity WebView**/
-                .setNegativeButton("More", new DialogInterface.OnClickListener() {
+                .setNegativeButton(getString(R.string.more_button), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         //se crea el intent
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity{
                         startActivity(intentPorgramaDeActualizaciones);
                     }
                 })
-                .setPositiveButton("Okay", null)
+                .setPositiveButton(getString(R.string.ok_button), null)
                 .show();
                 break;
             /**Caso about en este caso creamos un intent para iniciar la ActivityAbout**/

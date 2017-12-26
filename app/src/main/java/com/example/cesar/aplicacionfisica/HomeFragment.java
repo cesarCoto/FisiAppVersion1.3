@@ -3,6 +3,7 @@ package com.example.cesar.aplicacionfisica;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -13,10 +14,10 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
-
-public class HomeFragment extends Fragment implements View.OnTouchListener{
+public class HomeFragment extends Fragment implements View.OnTouchListener, View.OnClickListener{
 
     //Se crean los objetos necesarios para que se puedan enlazar las vistas con las clases java
     ImageView imageViewConversiones,imageViewVectores,imageViewMagnitudes,imageViewPrimeraLey,
@@ -62,6 +63,14 @@ public class HomeFragment extends Fragment implements View.OnTouchListener{
         cardViewPrimeraLey.setOnTouchListener(this);
         cardViewSegundaLey.setOnTouchListener(this);
         cardViewTerceraLey.setOnTouchListener(this);
+
+        /*Se asigna el onClickListener a cada una de las cardView*/
+        cardViewConversiones.setOnClickListener(this);
+        cardViewVectores.setOnClickListener(this);
+        cardViewMagnitudes.setOnClickListener(this);
+        cardViewPrimeraLey.setOnClickListener(this);
+        cardViewSegundaLey.setOnClickListener(this);
+        cardViewTerceraLey.setOnClickListener(this);
         return view;
     }
 
@@ -87,5 +96,23 @@ public class HomeFragment extends Fragment implements View.OnTouchListener{
                 break;
         }
         return false;
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.cardViewConversiones:
+                Toast.makeText(getActivity(), "Conversiones", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.cardViewVectores:
+                Toast.makeText(getActivity(), "Vectores", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.cardViewPrimeraLey:
+                break;
+            case R.id.cardViewSegundaLey:
+                break;
+            case R.id.cardViewTerceraLey:
+                break;
+        }
     }
 }

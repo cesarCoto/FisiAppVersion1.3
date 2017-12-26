@@ -34,7 +34,7 @@
             android:layout_alignBottom="@id/imagenExamenConversiones"
             android:layout_alignParentEnd="true"
             android:layout_margin="16dp"
-            android:text="Examen de conversiones"
+            android:text="@string/exam_conversiones"
             android:textColor="#fff" />
 
         <RelativeLayout
@@ -48,7 +48,7 @@
                 android:id="@+id/buttonExamṔracticoConversiones"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Practico"
+                android:text="@string/practico_title"
                 android:textColor="@color/buttonColor"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="@dimen/dimen_8dp"

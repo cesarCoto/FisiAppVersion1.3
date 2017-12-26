@@ -35,12 +35,12 @@ public class AboutActivity extends AppCompatActivity {
                 String [] correo = {"developfisiapp@gmail.com"};
                 intentMensaje.putExtra(Intent.EXTRA_EMAIL,correo);
                 intentMensaje.putExtra(Intent.EXTRA_SUBJECT,getString(R.string.app_name));
-                intentMensaje.putExtra(Intent.EXTRA_TEXT,"Hola");
+                intentMensaje.putExtra(Intent.EXTRA_TEXT,getString(R.string.email_title));
                 intentMensaje.setType("menssage/rfc822");
 
                 /*se crea un intent selector el cual ejecutara una barra en la parte inferior para
                 * que el usuario escoja su aplicacion preferida para mandar un mail*/
-                Intent chooser = Intent.createChooser(intentMensaje,"Que tal");
+                Intent chooser = Intent.createChooser(intentMensaje,getString(R.string.mandar_un_email));
                 startActivity(chooser);
             }
         });

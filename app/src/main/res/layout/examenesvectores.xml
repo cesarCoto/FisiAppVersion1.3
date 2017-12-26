@@ -34,7 +34,7 @@
             android:layout_alignBottom="@id/imagenExamenVectores"
             android:layout_alignParentEnd="true"
             android:layout_margin="16dp"
-            android:text="Examen de vectores"
+            android:text="@string/exam_vectores"
             android:textColor="#fff" />
 
         <RelativeLayout
@@ -48,7 +48,7 @@
                 android:id="@+id/buttonExamTeoricoVectores"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Teorico"
+                android:text="@string/teorico_title"
                 android:textColor="@color/buttonColor"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="@dimen/dimen_8dp"
@@ -58,7 +58,7 @@
                 android:id="@+id/buttonExamPractico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Practico"
+                android:text="@string/practico_title"
                 android:textColor="@color/buttonColor"
                 android:layout_marginEnd="@dimen/dimen_8dp"
                 android:layout_toStartOf="@id/buttonExamTeoricoVectores"

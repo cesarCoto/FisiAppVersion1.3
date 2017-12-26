@@ -31,7 +31,7 @@
                 style="@style/TextAppearance.AppCompat.Medium"
                 android:textAlignment="center"
                 android:layout_margin="@dimen/dimen_4dp"
-                android:text="Tercera Ley"/>
+                android:text="@string/tercera_ley_title"/>
         </LinearLayout>
 
     </RelativeLayout>

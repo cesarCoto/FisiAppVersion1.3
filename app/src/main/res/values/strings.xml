@@ -1,10 +1,62 @@
 <resources>
-    <string name="app_name">AplicacionFisica</string>
+    <string name="app_name">FisiApp</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_exams">Exams</string>
+    <string name="title_videos">Videos</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_about">AboutActivity</string>
+
+    <!--TODO: Textos de principales-->
+    <string name="about_title">About</string>
+    <string name="comentarios_title">Comments</string>
+    <string name="what_is_new_title">What\'s new</string>
+    <string name="practico_title">Practical</string>
+    <string name="teorico_title">Theoretical</string>
+    <string name="developers_title">Developers</string>
+    <string name="imagenes_e_iconos_title">Images and icons</string>
+    <string name="mandar_un_email">Send an email</string>
+    <string name="email_title">Hello</string>
+    <string name="share_title">Share with</string>
+    <string name="nuestro_blogg_title">Our blogg</string>
+    <string name="cestis">CETis 82 Miguel Hidalgo y Costilla</string>
+
+
+    <string name="version_app">Version 1.3</string>
+    <string name="ok_button">Ok</string>
+    <string name="more_button">More</string>
+    <string name="item_uno_carac">1- New design</string>
+    <string name="item_dos_carac">2- Reduced the size of the apk file</string>
+    <string name="item_tres_carac">3- Verification of exams</string>
+    <string name="item_cuatro_carac">4- Portrait and landscape layout</string>
+    <string name="item_cinco_carac">5- Adaptive icons for android 8</string>
+    <string name="item_static">6- Bug fixes</string>
+
+    <string name="conversions_title">Conversions</string>
+    <string name="vectors_title">Vectors</string>
+    <string name="magnitudes_title">Magnitudes</string>
+    <string name="ley_inercia_title">Newton\'s first law</string>
+    <string name="segunda_ley_title">Second law of Newton</string>
+    <string name="tercera_ley_title">Newton\'s third law</string>
+
+    <string name="exam_conversiones">Conversion exam</string>
+    <string name="exam_vectores">Vector exam</string>
+    <string name="exam_magnitudes">Magnitudes exam</string>
+    <string name="exam_leyes">Newton\'s law exam</string>
+
+    <string name="texto_pixabay">PixaBay</string>
+    <string name="vector_maker">Vectors Market</string>
+    <string name="smashicons">Smashicons</string>
+    <string name="freepik">Freepik</string>
+    <string name="roundicons">Roundicons</string>
+    <string name="pixel_buddha">Pixel Buddha</string>
+    <string name="androdev">AndroDev</string>
+
+
+
+    <string name="jose_manuel_couti_o_vazques">José Manuel Coutiño Vazques</string>
+    <string name="cesar_uriel_coto_coazozon">César Uriel Coto Coazozón</string>
+    <string name="manuel_de_jesus_couti_o_vazques">Manuel de Jesus Coutiño Vazques</string>
+
+
 </resources>

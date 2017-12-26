@@ -9,6 +9,7 @@
     </style>
 
     <!-- Styles por Cesar Uriel Coto Coazozon -->
+    <!--TODO: Aqui estan los estilos del fragment home-->
     <style name="cardViewIzquierda">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -23,7 +24,6 @@
         <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
         <item name="cardElevation">@dimen/carddimen_2dp</item>
     </style>
-
     <style name="cardViewDerecha">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -37,7 +37,112 @@
         <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
         <item name="cardElevation">@dimen/carddimen_2dp</item>
     </style>
+    <!--TODO: Aqui estan los estilos del fragment exams-->
 
+
+
+    <!--TODO: Aqui estan los etilos de los elementos del fragment videos-->
+    <style name="cardViewVideos">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_4dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_4dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="cardElevation">@dimen/carddimen_2dp</item>
+        <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
+    </style>
+
+    <style name="layoutCardVideos">
+        <item name="android:paddingLeft">@dimen/dimen_16dp</item>
+        <item name="android:paddingRight">@dimen/dimen_16dp</item>
+        <item name="android:paddingTop">@dimen/dimen_8dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="imageViewCardVideos">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="textViewCardVideos">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="imageShareCardView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_share_black_24dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_margin">@dimen/dimen_4dp</item>
+        <item name="android:padding">@dimen/dimen_8dp</item>
+    </style>
+
+    <!--TODO: Aqui estan los estilos de los elementos de la actividad About-->
+    <style name="cardViewAboutActivity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@color/bgcolorwhite</item>
+        <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
+        <item name="cardElevation">@dimen/carddimen_2dp</item>
+    </style>
+    <style name="textTitleAboutActivity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_16dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="itemAboutActivityAbout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+    <style name="imageDevAboutActivity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+        <item name="android:tint">#333</item>
+        <item name="android:src">@drawable/ic_developer_24dp</item>
+    </style>
+    <style name="textItemAboutActivity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="imageDrawAboutActivity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+    </style>
+    <!--Estilos por Google-->
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
