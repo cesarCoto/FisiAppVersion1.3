@@ -9,9 +9,19 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
 
-public class AboutActivity extends AppCompatActivity {
+/***********************************************************************************************/
 
+            /******************Codigo por Cesar Coto y Jose manuel********************/
+
+/***********************************************************************************************/
+
+public class AboutActivity extends AppCompatActivity implements OnClickListener{
+    String[]paginas = {"https://androidprototipo.blogspot.mx"};
+
+    LinearLayout linearLayoutItemOurBlogg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +33,13 @@ public class AboutActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        //Item nuestro Blogg
+        linearLayoutItemOurBlogg = findViewById(R.id.linearLayoutBlog);
+
+        linearLayoutItemOurBlogg.setOnClickListener(this);
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        fab.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 /**Se crea un intent especial para mandar un mail.**/
@@ -46,4 +61,14 @@ public class AboutActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.linearLayoutBlog:
+                Intent intentLoadOurBlogg = new Intent(this,WebViewActivity.class);
+                intentLoadOurBlogg.putExtra("Web",paginas[0]);
+                startActivity(intentLoadOurBlogg);
+                break;
+        }
+    }
 }

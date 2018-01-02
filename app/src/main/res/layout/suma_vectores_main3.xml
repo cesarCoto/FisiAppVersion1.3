@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO:Aqui esta la segunda parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/titlulo_suma_y_resta_algebraica_vectores"/>
+
+        <View
+            style="@style/separador"/>
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+            <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/suma_resta"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo15_vectores"/>
+
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/parrafo16_vectores"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

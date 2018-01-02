@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Aqui esta la primera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/titulo_suma_geometrica_vectores"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo9_vectores"/>
+
+        <FrameLayout
+           style="@style/frameLayoutImageContainer">
+
+            <ImageView
+               style="@style/imageViewInformation"
+               android:src="@drawable/suma" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo10_vectores"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:textAlignment="center"
+            android:text="@string/formula1_vectores"/>
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo11_vectores"/>
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+
+            <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/ejemplo_suma"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

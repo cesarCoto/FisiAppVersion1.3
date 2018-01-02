@@ -16,6 +16,11 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+/***********************************************************************************************/
+
+            /******************Codigo por Cesar Coto y Jose manuel********************/
+
+/***********************************************************************************************/
 
 public class HomeFragment extends Fragment implements View.OnTouchListener, View.OnClickListener{
 
@@ -102,10 +107,12 @@ public class HomeFragment extends Fragment implements View.OnTouchListener, View
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.cardViewConversiones:
-                Toast.makeText(getActivity(), "Conversiones", Toast.LENGTH_SHORT).show();
+                Intent intentShowActivityConversiones = new Intent(getActivity(),ConversionesActivity.class);
+                startActivity(intentShowActivityConversiones);
                 break;
             case R.id.cardViewVectores:
-                Toast.makeText(getActivity(), "Vectores", Toast.LENGTH_SHORT).show();
+                Intent intentShowActivityVectores = new Intent(getActivity(),VectorsActivity.class);
+                startActivity(intentShowActivityVectores);
                 break;
             case R.id.cardViewPrimeraLey:
                 break;

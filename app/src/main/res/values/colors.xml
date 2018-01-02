@@ -7,4 +7,5 @@
     <color name="bgcolorwhite">#fff</color>
     <color name="bg_color">#efefef</color>
     <color name="gray_very_light">#E0E0E0</color>
+    <color name="black">#000</color>
 </resources>

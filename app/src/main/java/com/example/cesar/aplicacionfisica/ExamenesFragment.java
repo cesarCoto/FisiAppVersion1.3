@@ -2,6 +2,7 @@ package com.example.cesar.aplicacionfisica;
 
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -11,22 +12,52 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.Button;
 import android.widget.ImageView;
 
-public class ExamenesFragment extends Fragment implements View.OnTouchListener{
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
+/***********************************************************************************************/
+
+/******************Codigo por Cesar Coto y Jose manuel********************/
+
+/***********************************************************************************************/
+
+public class ExamenesFragment extends Fragment implements View.OnTouchListener, View.OnClickListener {
 
     //Se crean los objetos necesarios para que se puedan enlazar las vistas con las clases java
-    ImageView imageViewExamConversiones,imageViewExamVectores,imageViewExamMagnitudes,
+    ImageView imageViewExamConversiones, imageViewExamVectores, imageViewExamMagnitudes,
             imageViewExamNeton;
 
-    CardView cardViewExamConversiones,cardViewExamVectores,cardViewExamMagnitudes,
+    CardView cardViewExamConversiones, cardViewExamVectores, cardViewExamMagnitudes,
             cardViewExamNewton;
+
+    //implementacion de butterKnife
+    @BindView(R.id.buttonExampracticoConversiones)
+    Button buttonExampracticoConversiones;
+    @BindView(R.id.buttonExamTeoricoVectores)
+    Button buttonExamTeoricoVectores;
+    @BindView(R.id.buttonExamPracticoVectores)
+    Button buttonExamPracticoVectores;
+    @BindView(R.id.buttonExamTeoricoMagnitudes)
+    Button buttonExamTeoricoMagnitudes;
+    @BindView(R.id.buttonExamPracticoMagnitudes)
+    Button buttonExamPracticoMagnitudes;
+    @BindView(R.id.buttonnExamTeoricoNewton)
+    Button buttonnExamTeoricoNewton;
+    @BindView(R.id.buttonExamPracticoNewton)
+    Button buttonExamPracticoNewton;
+    Unbinder unbinder;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_examenes, container, false);
+        //se enlazan las vistas creadas con butterKnife
+        unbinder = ButterKnife.bind(this, view);
 
         //se enlazan los objetos con las vistas
         /**CardViews**/
@@ -52,9 +83,22 @@ public class ExamenesFragment extends Fragment implements View.OnTouchListener{
         cardViewExamVectores.setOnTouchListener(this);
         cardViewExamMagnitudes.setOnTouchListener(this);
         cardViewExamNewton.setOnTouchListener(this);
+
+        //se enlazan los onClickListener a los botones
+        buttonExampracticoConversiones.setOnClickListener(this);
+        buttonExamPracticoVectores.setOnClickListener(this);
+        buttonExamPracticoMagnitudes.setOnClickListener(this);
+        buttonExamPracticoNewton.setOnClickListener(this);
+        //examenes teoricos
+        buttonExamTeoricoVectores.setOnClickListener(this);
+        buttonExamTeoricoMagnitudes.setOnClickListener(this);
+        buttonnExamTeoricoNewton.setOnClickListener(this);
         return view;
     }
-    /**Se crea la animacion que hacen las cardView al ser presionadas por un tiempo prolongado**/
+
+    /**
+     * Se crea la animacion que hacen las cardView al ser presionadas por un tiempo prolongado
+     **/
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         switch (motionEvent.getAction()) {
@@ -75,5 +119,49 @@ public class ExamenesFragment extends Fragment implements View.OnTouchListener{
                 break;
         }
         return false;
+    }
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.buttonExampracticoConversiones:
+                Intent intentConversiones = new Intent(getActivity(),ExamenConversionesActivity.class);
+                startActivity(intentConversiones);
+                break;
+
+            case R.id.buttonExamPracticoVectores:
+                Intent intentEPvectores = new Intent(getActivity(),ExamenPracticoVectoresActivity.class);
+                startActivity(intentEPvectores);
+                break;
+
+            case R.id.buttonExamPracticoMagnitudes:
+                Intent intentEPmagnitudes = new Intent(getActivity(),ExamenPracticoMagnitudesActivity.class);
+                startActivity(intentEPmagnitudes);
+                break;
+
+            case R.id.buttonExamPracticoNewton:
+                Intent intentEPnewton = new Intent(getActivity(),ExamenPracticoNewtonActivity.class);
+                startActivity(intentEPnewton);
+                break;
+
+            case R.id.buttonExamTeoricoVectores:
+                Intent intentETvectores = new Intent(getActivity(),ExamenTeoricoVectoresActivity.class);
+                startActivity(intentETvectores);
+                break;
+
+            case R.id.buttonExamTeoricoMagnitudes:
+                Intent intentETmagnitudes = new Intent(getActivity(),ExamenTeoricoMagnitudesActivity.class);
+                startActivity(intentETmagnitudes);
+                break;
+
+            case R.id.buttonnExamTeoricoNewton:
+                Intent intentETnewton = new Intent(getActivity(),ExamenTeoricoNewtonActivity.class);
+                startActivity(intentETnewton);
+                break;
+        }
+    }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
     }
 }

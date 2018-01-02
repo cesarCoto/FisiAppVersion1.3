@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO:Aqui esta la tercera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/titulo_operativa_vectorial"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo8_vectores"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

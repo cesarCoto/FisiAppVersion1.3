@@ -15,6 +15,12 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+/***********************************************************************************************/
+
+            /******************Codigo por Cesar Coto y Jose manuel********************/
+
+/***********************************************************************************************/
+
 public class VideosFragment extends Fragment implements View.OnClickListener, View.OnTouchListener{
 
     @Override

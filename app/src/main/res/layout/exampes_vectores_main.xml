@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Primer problema-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="Example number 1"/>
+
+        <View
+            style="@style/separador"/>
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+
+            <ImageView
+               style="@style/imageViewInformation"
+               android:src="@drawable/ejem"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/titleExamTextView"
+            android:text="@string/data_title"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/item1_vectores_examples"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/item2_vectores_examples"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/item3_vectores_examples"/>
+
+        <TextView
+            style="@style/titleExamTextView"
+            android:text="@string/formulas_title"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/formula_cxcos_vectores"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/formula_cysen_vectores"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/pitagoras"/>
+
+
+        <TextView
+            style="@style/titleExamTextView"
+            android:text="@string/proceso_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="@string/proceso1_vectores_example1"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="@string/proceso2_vectores_example1"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="@string/respuesta_parte1_example1_vectores"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="@string/respuesta_parte2_example1_vectores"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="@string/respuesta_parte3_example1_vectores"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

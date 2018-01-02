@@ -2,6 +2,7 @@ package com.example.cesar.aplicacionfisica;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -11,9 +12,14 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity{
+    /***********************************************************************************************/
 
+                /******************Codigo por Cesar Coto y Jose manuel********************/
+
+    /***********************************************************************************************/
     /**Metodo del menu estilo BottomNavigation**/
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -71,12 +77,26 @@ public class MainActivity extends AppCompatActivity{
     }
 
     /**onOptionItemSelected es el metodo mediante el cual identificaremos que opcion de nuestro menu
-     * a sido seleccionada y que accion realizaremos**/
+     * se a seleccionada y que accion realizaremos**/
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //el switch obtiene el id del elemento seleccionado y lo analiza con los casos disponibles.
         switch (item.getItemId()){
 
+            case R.id.action_comentarios:
+                //se crea unn intent explicito para mandar un mail a los desarrolladores.
+                Intent intentSendEmail = new Intent();
+                intentSendEmail.setAction(Intent.ACTION_SENDTO);
+                intentSendEmail.setData(Uri.parse("mailto:devfisiapp@gmail.com"));
+                intentSendEmail.putExtra(Intent.EXTRA_SUBJECT, "About:FisiAppp");
+                /*en caso de no tener instalada la aplicacion de gmail nos notificara y no se podra
+                hacer la funcion*/
+                try {
+                    startActivity(intentSendEmail);
+                } catch (Exception e) {
+                    Toast.makeText(MainActivity.this, "Email no fount", Toast.LENGTH_SHORT).show();
+                }
+                break;
             /**Caso de que hay de nuevo en este caso creamos un dialogo de a lerta donde indicamos las
              * novedades de la version*/
             case R.id.action_queHayDeNuevo:

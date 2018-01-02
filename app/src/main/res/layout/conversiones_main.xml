@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Aqui esta la primera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/title_que_es_la_conversion"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo1_conversiones"/>
+
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/parrafo2_conversiones"/>
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+        <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/conversiones_ejemplp"/>
+        </FrameLayout>
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo3_conversiones"/>
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+            <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/conversiondoble_ejemplo"/>
+        </FrameLayout>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo4_conversiones"/>
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+            <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/solucion"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -16,9 +16,13 @@
     <string name="developers_title">Developers</string>
     <string name="imagenes_e_iconos_title">Images and icons</string>
     <string name="mandar_un_email">Send an email</string>
+    <string name="examples_title">Examples</string>
     <string name="email_title">Hello</string>
     <string name="share_title">Share with</string>
     <string name="nuestro_blogg_title">Our blogg</string>
+    <string name="formulas_title">Formulas</string>
+    <string name="data_title">Data</string>
+    <string name="proceso_title">Process</string>
     <string name="cestis">CETis 82 Miguel Hidalgo y Costilla</string>
 
 
@@ -34,6 +38,7 @@
 
     <string name="conversions_title">Conversions</string>
     <string name="vectors_title">Vectors</string>
+    <string name="vectors_suma_title">Sum of vectors</string>
     <string name="magnitudes_title">Magnitudes</string>
     <string name="ley_inercia_title">Newton\'s first law</string>
     <string name="segunda_ley_title">Second law of Newton</string>
@@ -53,10 +58,77 @@
     <string name="androdev">AndroDev</string>
 
 
-
     <string name="jose_manuel_couti_o_vazques">José Manuel Coutiño Vazques</string>
     <string name="cesar_uriel_coto_coazozon">César Uriel Coto Coazozón</string>
     <string name="manuel_de_jesus_couti_o_vazques">Manuel de Jesus Coutiño Vazques</string>
+    <string name="title_activity_vectors">Vectors</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
+    <!--TODO: Edite aqui el contenido de la actividad Vectores-->
+    <string name="titulo_introduccion_a_vectores">Introduction to vectors</string>
+    <string name="parrafo1_vectores">A vector is every line segment directed in space. Each vector has characteristics that are:</string>
+    <string name="subtitulo1_vectores">Origin or also called Point of application</string>
+    <string name="parrafo2_vectores">A vector is every line segment directed in space. Each vector has characteristics that are:</string>
+    <string name="subtitulo2_vectores">Module</string>
+    <string name="parrafo3_vectores">Is the length or size of the vector</string>
+    <string name="subtitulo3_vectores">Direction</string>
+    <string name="parrafo4_vectores">Is given by the orientation in the space of the line that contains it.</string>
+    <string name="subtitulo4_vectores">Sense</string>
+    <string name="parrafo5_vectores">is indicated by an arrowhead located at the end of the vector, indicating to which side of the line of action the vector is directed.</string>
+    <string name="titulo_vectores_en_el_plano_cartesiano">Vectors in a Cartesian plane</string>
+    <string name="parrafo6_vectores">The study of vectors is facilitated if we place them in a Cartesian decorating system that helps us to have greater precision, so as to be able to represent them in an algebraic way as well as in a geometric way</string>
+    <string name="parrafo7_vectores">One of the characteristics is that when we have a vector that is not at the origin of our Cartesian plane, we can move it, so that the origin is always (0,0) andthus facilitate our calculations, because we will only need the end point to determine it.</string>
+    <string name="titulo_operativa_vectorial">Vector Operative</string>
+    <string name="parrafo8_vectores">Like numbers, vectors can be operated on each other, through addition, subtraction, multiplication by a scalar, division by a scalar, product point and cross product. These last two are typical of vectors.</string>
+    <string name="titulo_suma_geometrica_vectores">Sum geometric way</string>
+    <string name="parrafo9_vectores">When adding two vectors, another vector is obtained (sum or resultant vector). To obtain the sum vector it is necessary to resort to what is known as “THE PARALLELOGRAM RULE”. That is, a parallelogram is constructed that has the vectors as sides and the diagonal is drawn to obtain the vector sum.</string>
+    <string name="parrafo10_vectores">If we want to add A + B, one is drawn after the other, moving it. The resulting vector is the one that goes from the initial point of the first vector to the end of the last one. It should be noted that the sum is commutative, that is:</string>
+    <string name="formula1_vectores">A + B = B + A</string>
+    <string name="parrafo11_vectores">When you want to add more than one vector, you proceed in the same way as before, but now they are placed one after the other until the last one. Then the line that joins the beginning of the first vector with the term of the last one is the resulting vector.</string>
+    <string name="titulo_componente_rectangular_vectores">Rectangular components</string>
+    <string name="parrafo12_vectores">It is based on writing a vector as the sum of two others which are orthogonal (perpendicular to each other), for this it is based on the Cartesian plane, the vectors that are added are in one of the axes. The rectangular components are so called because it is based on the construction of a rectangle.</string>
+    <string name="parrafo13_vectores">In the image you can see that the vector A is not more than the sum of one vector on the X axis and another one on the Y axis. Each of these vectors is known as the component, so the vector Ax is the component X of the vector A.</string>
+    <string name="parrafo14_vectores">In order to write these vectors correctly, we must introduce the unit vectors, which are detailed below.</string>
+    <string name="titlulo_suma_y_resta_algebraica_vectores">Addition and subtraction algebraically</string>
+    <string name="parrafo15_vectores">Let two vectors A and B be added, then we proceed in the graphical way that we know, which gives us as a result the vector R.</string>
+    <string name="parrafo16_vectores">Now what we will do is write both the vector A and the B according to its components, then we realize that the sum of the components X of vector A and B, is the component X of the vector R and thus also with the axis Y.</string>
+
+    <!--TODO: edite aqui el contenido de los ejemplos de la actividad vectores-->
+    <string name="item1_vectores_examples">Vector A 5km to 120°</string>
+    <string name="item2_vectores_examples">Vector B 7km to 43°</string>
+    <string name="item3_vectores_examples">Vector C 8km to 150°</string>
+    <string name="formula_cxcos_vectores">Cx = Vcosθ</string>
+    <string name="formula_cysen_vectores">Cy = Vsenθ</string>
+    <string name="pitagoras">C² = √a²+b²</string>
+    <string name="proceso1_vectores_example1">Cx = 5kmcos120° = 2.5km  Cx 7kmCos43° = 5.1km  Cx = 8kmCos150° = -6.9km</string>
+    <string name="proceso2_vectores_example1">Cy = 5kmsen120° = 4.3km   Cy = 7kmSen43° = 4.7km   Cy = 8kmSen150° = 4km</string>
+    <string name="respuesta_parte1_example1_vectores">R=√18.49 + 169</string>
+    <string name="respuesta_parte2_example1_vectores">R = √187.49</string>
+    <string name="respuesta_parte3_example1_vectores">R = 13.69</string>
+
+    <!--TODO edite aqui el contenido de la actividad conversiones-->
+    <string name="title_que_es_la_conversion">What is the conversion of units?</string>
+    <string name="parrafo1_conversiones">The conversion of units is the transformation of a quantity, expressed in a certain unit of measurement, into another equivalent. It can be from the same system of units or not.</string>
+    <string name="parrafo2_conversiones">This process is usually done with the use of conversion factors and conversion tables. It is often enough to multiply by a fraction and the result is another equivalent measure, in which the units have changed.</string>
+    <string name="parrafo3_conversiones">When the change of units involves the transformation of several units, several conversion factors can be used one after the other.</string>
+    <string name="parrafo4_conversiones">In this way, the final result will be the equivalent measure of the units sought.</string>
+
+    <!--TODO edite aqui el contenido de los ejemplos de la actividad conversiones-->
+    <string name="ejemplo1_conversiones">4m³ to cm³</string>
+    <string name="item1_conversiones_ejemplo1">1m³ = 1000000cm³</string>
+    <string name="respuesta_ejemplo1_conversiones">4m³ * 1000000cm³/1m³ = 400000cm³</string>
+    <string name="ejemplo2_conversiones">5m/s to km/h</string>
+    <string name="item1_conversiones_ejemplo2">1km = 1000m</string>
+    <string name="item2_conversiones_ejemplo2">1hr = 3600s</string>
+    <string name="respuesta_conversiones_ejemplo2_parte1">5m/s * 1km/1000m * 3600s/1hr = 18000km/1000h</string>
+    <string name="respuesta_conversiones_ejemplo2_parte2">18000km/1000h = 18km/h</string>
+    <string name="ejemplo3_conversiones">50L/s to m³/h</string>
+    <string name="item1_conversiones_ejemplo3">1m³ = 1000L</string>
+    <string name="respuesta_conversiones_ejemplo3_parte1">5L/s * 1m³/1000L * 3600s/1h = 180000m³/1000h</string>
+    <string name="respuesta_conversiones_ejemplo3_parte2">180000m³/1000h = 180m³/h</string>
 
 </resources>

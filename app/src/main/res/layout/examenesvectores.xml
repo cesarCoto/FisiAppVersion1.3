@@ -55,7 +55,7 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:padding="@dimen/dimen_8dp"/>
             <Button
-                android:id="@+id/buttonExamPractico"
+                android:id="@+id/buttonExamPracticoVectores"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/practico_title"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO:Aqui esta el ejemplo 3-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/ejemplo3_conversiones"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/titleExamTextView"
+            android:text="@string/data_title"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/item1_conversiones_ejemplo3"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/item2_conversiones_ejemplo2"/>
+        <TextView
+            style="@style/titleExamTextView"
+            android:text="@string/proceso_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/respuesta_conversiones_ejemplo3_parte1"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/respuesta_conversiones_ejemplo3_parte2"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

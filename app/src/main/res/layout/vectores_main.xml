@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Aqui esta la primera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/titulo_introduccion_a_vectores"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo1_vectores"/>
+
+        <!--TODO:Aqui esta el primer punto-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/subtitulo1_vectores"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo2_vectores"/>
+
+        <!--TODO:Aqui esta el segundo punto-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/subtitulo2_vectores"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo3_vectores"/>
+
+
+        <!--TODO:Aqui esta el tercer punto-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/subtitulo3_vectores"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo4_vectores"/>
+
+        <!--TODO:Aqui esta la segunda parte punto-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/subtitulo4_vectores"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo5_vectores"/>
+
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+        <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/vectorescarac"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

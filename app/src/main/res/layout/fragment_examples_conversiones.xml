@@ -1,0 +1,18 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragmentStyle"
+    tools:context="com.example.cesar.aplicacionfisica.ExamplesConversionesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <include layout="@layout/examples_conversiones_main"/>
+        <include layout="@layout/examples_conversiones_main2"/>
+        <include layout="@layout/examples_conversiones_main3"/>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

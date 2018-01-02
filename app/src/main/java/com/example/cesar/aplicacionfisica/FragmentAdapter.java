@@ -6,6 +6,12 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.List;
 
+/***********************************************************************************************/
+
+            /******************Codigo por Cesar Coto y Jose manuel********************/
+
+/***********************************************************************************************/
+
 /**Este metodo nos ayuda a hacer el cambio de fragment en las actividades de cada asignacion*/
 public class FragmentAdapter extends FragmentStatePagerAdapter {
     private List<Fragment> mFragments;

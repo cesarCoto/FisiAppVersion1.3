@@ -13,6 +13,12 @@ import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+/***********************************************************************************************/
+
+            /******************Codigo por Cesar Coto y Jose manuel********************/
+
+/***********************************************************************************************/
+
 public class WebViewActivity extends AppCompatActivity {
 
     //se crean los objetos para enlazarlos con las vistas
