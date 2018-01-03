@@ -1,9 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.cesar.aplicacionfisica.VectorsActivity">
+    tools:context="com.example.cesar.aplicacionfisica.PrimeraLeyActivity">
     <item
-        android:id="@+id/action_helpVectors"
+        android:id="@+id/action_helpNewton"
         android:orderInCategory="100"
         android:title="Help?"
         app:showAsAction="ifRoom"

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--Styles por google-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -14,9 +14,8 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/paddinbottomcardizquierda_16dp</item>
-        <item name="android:layout_marginStart">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginStart">@dimen/card_margin_horizontal</item>
         <item name="android:layout_marginEnd">@dimen/dimen_4dp</item>
-        <item name="android:layout_marginTop">@dimen/dimen_2dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:clickable">true</item>
         <item name="android:background">@drawable/repple</item>
@@ -29,7 +28,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">@dimen/dimen_4dp</item>
-        <item name="android:layout_marginEnd">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/card_margin_horizontal</item>
         <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:clickable">true</item>
@@ -233,6 +232,120 @@
         <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
         <item name="android:textAlignment">center</item>
+    </style>
+
+    <!--Todo: edite aqui los estilos de los elementos de las actividades examen-->
+    <style name="cardViewExamen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="cardElevation">@dimen/carddimen_2dp</item>
+        <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
+    </style>
+
+    <style name="layoutContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_4dp</item>
+    </style>
+
+    <style name="layoutPreguntas">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="radioButtonRespuesta">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="buttonCalificar">
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">clip_horizontal</item>
+        <item name="android:text">@string/qualify_text</item>
+    </style>
+    <style name="textViewProblema">
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="textInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
+    </style>
+    <style name="textInputTypeNumber">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <!--TODO: edite aqui los estilos de los dialogos(formularaios)-->
+    <style name="DialogFullscreen" parent="@android:style/Theme.Material.Light.DialogWhenLarge" tools:targetApi="lollipop">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    <!--TODO: edite aqui los estilos del los elementos contenidos en los formularios-->
+    <style name="cardActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">@dimen/carddimen_2dp</item>
+    </style>
+    <style name="buttonCloseDialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">@dimen/dimen_12dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/dimen_4dp</item>
+        <item name="android:src">@drawable/ic_close_24dp</item>
+    </style>
+
+    <style name="textViewFormula">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="itemFormulario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">@dimen/dimen_8dp</item>
+    </style>
+    <style name="cardFormulario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
     </style>
 
     <!--Estilos por Google-->

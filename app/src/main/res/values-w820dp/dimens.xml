@@ -1,5 +1,0 @@
-<resources>
-    <!--Las medidas presentadas en este apartado son para dispositivos con panrallas
-    de gran cantidad de pixeles xxxhdpi y xxhdpi asi como tvdpi entre otros-->
-    <dimen name="activity_horizontal_margin">64dp</dimen>
-</resources>

@@ -5,6 +5,7 @@ import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -15,6 +16,10 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 
 /***********************************************************************************************/
 
@@ -53,13 +58,48 @@ public class HomeFragment extends Fragment implements View.OnTouchListener, View
         cardViewSegundaLey = view.findViewById(R.id.cardViewSegundaLey);
         cardViewTerceraLey = view.findViewById(R.id.cardViewTerceraLey);
 
-        /*Se asignan las imagnes que tendra cada ImageView*/
-        imageViewConversiones.setImageResource(R.drawable.conversiones_img);
-        imageViewVectores.setImageResource(R.drawable.vectores_img);
-        imageViewMagnitudes.setImageResource(R.drawable.magnitudes_img);
-        imageViewPrimeraLey.setImageResource(R.drawable.primera_ley_new_img);
-        imageViewSegundaLey.setImageResource(R.drawable.segunda_ley_new_img);
-        imageViewTerceraLey.setImageResource(R.drawable.tercera_lew_new_img);
+        /*Se asignan las imagnes que tendra cada ImageView
+        * haciendo uso de la libreria glide*/
+        //requesOptions es un elemento que nos permite añadir caracteristicas a la imagen
+        RequestOptions options = new RequestOptions();
+        options.fitCenter();
+        options.diskCacheStrategy(DiskCacheStrategy.ALL);
+
+        Glide.with(getContext())
+                .load(R.drawable.conversiones_img)
+                .apply(options)
+                .into(imageViewConversiones);
+
+        Glide.with(getContext())
+                .load(R.drawable.vectores_img)
+                .apply(options)
+                .into(imageViewVectores);
+
+        Glide.with(getContext())
+                .load(R.drawable.magnitudes_img)
+                .apply(options)
+                .into(imageViewMagnitudes);
+
+        Glide.with(getContext())
+                .load(R.drawable.primera_ley_new_img)
+                .apply(options)
+                .into(imageViewPrimeraLey);
+
+        Glide.with(getContext())
+                .load(R.drawable.segunda_ley_new_img)
+                .apply(options)
+                .into(imageViewSegundaLey);
+
+        Glide.with(getContext())
+                .load(R.drawable.tercera_lew_new_img)
+                .apply(options)
+                .into(imageViewTerceraLey);
+
+        return view;
+    }
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
         /*Se asigna el metodo onTouch a cada cardView*/
         cardViewConversiones.setOnTouchListener(this);
@@ -76,7 +116,7 @@ public class HomeFragment extends Fragment implements View.OnTouchListener, View
         cardViewPrimeraLey.setOnClickListener(this);
         cardViewSegundaLey.setOnClickListener(this);
         cardViewTerceraLey.setOnClickListener(this);
-        return view;
+
     }
 
     @Override
@@ -110,15 +150,30 @@ public class HomeFragment extends Fragment implements View.OnTouchListener, View
                 Intent intentShowActivityConversiones = new Intent(getActivity(),ConversionesActivity.class);
                 startActivity(intentShowActivityConversiones);
                 break;
+
             case R.id.cardViewVectores:
                 Intent intentShowActivityVectores = new Intent(getActivity(),VectorsActivity.class);
                 startActivity(intentShowActivityVectores);
                 break;
+
+            case R.id.cardViewMagnitudes:
+                Intent intentShowActivityMagnitudes = new Intent(getActivity(),MagnitudesActivity.class);
+                startActivity(intentShowActivityMagnitudes);
+                break;
+                
             case R.id.cardViewPrimeraLey:
+                Intent intentShowActivityPrimeraLey = new Intent(getActivity(),PrimeraLeyActivity.class);
+                startActivity(intentShowActivityPrimeraLey);
                 break;
+
             case R.id.cardViewSegundaLey:
+                Intent intentShowActivitySegundaLey = new Intent(getActivity(),SegundaLeyActivity.class);
+                startActivity(intentShowActivitySegundaLey);
                 break;
+
             case R.id.cardViewTerceraLey:
+                Intent intentShowActivityTerceraLey = new Intent(getActivity(),TerceraLeyActivity.class);
+                startActivity(intentShowActivityTerceraLey);
                 break;
         }
     }

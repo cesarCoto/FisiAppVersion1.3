@@ -20,6 +20,13 @@
     <string name="email_title">Hello</string>
     <string name="share_title">Share with</string>
     <string name="nuestro_blogg_title">Our blogg</string>
+
+    <string name="title_activity_magnitudes">MagnitudesActivity</string>
+    <string name="title_activity_primera_ley">PrimeraLeyActivity</string>
+    <string name="title_activity_segunda_ley">SegundaLeyActivity</string>
+    <string name="title_activity_tercera_ley">TerceraLeyActivity</string>
+    <string name="qualify_text">Qualify</string>
+
     <string name="formulas_title">Formulas</string>
     <string name="data_title">Data</string>
     <string name="proceso_title">Process</string>
@@ -65,7 +72,6 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
-    <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
     <!--TODO: Edite aqui el contenido de la actividad Vectores-->
@@ -125,10 +131,93 @@
     <string name="item1_conversiones_ejemplo2">1km = 1000m</string>
     <string name="item2_conversiones_ejemplo2">1hr = 3600s</string>
     <string name="respuesta_conversiones_ejemplo2_parte1">5m/s * 1km/1000m * 3600s/1hr = 18000km/1000h</string>
-    <string name="respuesta_conversiones_ejemplo2_parte2">18000km/1000h = 18km/h</string>
+    <string name="respuesta_conversiones_ejemplo2_parte2">18000km÷1000h = 18km/h</string>
     <string name="ejemplo3_conversiones">50L/s to m³/h</string>
     <string name="item1_conversiones_ejemplo3">1m³ = 1000L</string>
     <string name="respuesta_conversiones_ejemplo3_parte1">5L/s * 1m³/1000L * 3600s/1h = 180000m³/1000h</string>
-    <string name="respuesta_conversiones_ejemplo3_parte2">180000m³/1000h = 180m³/h</string>
+    <string name="respuesta_conversiones_ejemplo3_parte2">180000m³÷1000h = 180m³/h</string>
+
+    <!--TODO: edite aqui las preguntas y respuestas del examen Conversiones-->
+    <string name="pregunta_uno_conversiones_teorico">Convert 1 mile to meters</string>
+    <string name="respuesta1_pregunta1_examteorico_conversiones">16 meters</string>
+    <string name="respuesta2_pregunta1_examteorico_conversiones">500 meters</string>
+    <string name="respuesta3_pregunta1_examteorico_conversiones">1609 meters</string>
+    <string name="respuesta4_pregunta1_examteorico_conversiones">1000 meters</string>
+
+    <string name="pregunta_dos_conversiones_teorico">Convert 12.3 miles to meters</string>
+    <string name="respuesta1_pregunta2_examteorico_conversiones">1609 meters</string>
+    <string name="respuesta2_pregunta2_examteorico_conversiones">19794 meters</string>
+    <string name="respuesta3_pregunta2_examteorico_conversiones">12000 meters</string>
+    <string name="respuesta4_pregunta2_examteorico_conversiones">12500 meters</string>
+
+    <string name="pregunta_tres_conversiones_teorico">Convert 45 miles to kilometers</string>
+    <string name="respuesta1_pregunta3_examteorico_conversiones">75,900 kilometers</string>
+    <string name="respuesta2_pregunta3_examteorico_conversiones">72,420 kilometers</string>
+    <string name="respuesta3_pregunta3_examteorico_conversiones">70,858 kilometers</string>
+    <string name="respuesta4_pregunta3_examteorico_conversiones">78.9 kilometers</string>
+
+    <string name="pregunta_cuatro_conversiones_teorico">Convert 1 meter to yards</string>
+    <string name="respuesta1_pregunta4_examteorico_conversiones">.9 yards</string>
+    <string name="respuesta2_pregunta4_examteorico_conversiones">1 Yard</string>
+    <string name="respuesta3_pregunta4_examteorico_conversiones">1,093 yards</string>
+    <string name="respuesta4_pregunta4_examteorico_conversiones">2.54 yards</string>
+
+    <string name="pregunta_cinco_conversiones_teorico">Convert 100 meters to yards</string>
+    <string name="respuesta1_pregunta5_examteorico_conversiones">109.3 yards</string>
+    <string name="respuesta2_pregunta5_examteorico_conversiones">100.3 yards</string>
+    <string name="respuesta3_pregunta5_examteorico_conversiones">1.3 yards</string>
+    <string name="respuesta4_pregunta5_examteorico_conversiones">900.3 yards</string>
+
+    <string name="pregunta_seis_conversiones_teorico">Convert 3 meters to feet</string>
+    <string name="respuesta1_pregunta6_examteorico_conversiones">7,598 feet</string>
+    <string name="respuesta2_pregunta6_examteorico_conversiones">9,842 feet</string>
+    <string name="respuesta3_pregunta6_examteorico_conversiones">6,895 feet</string>
+    <string name="respuesta4_pregunta6_examteorico_conversiones">800 feet</string>
+
+    <string name="pregunta_siete_conversiones_teorico">Convert 6 feet to meters</string>
+    <string name="respuesta1_pregunta7_examteorico_conversiones">1,828 meters</string>
+    <string name="respuesta2_pregunta7_examteorico_conversiones">2,567 meters</string>
+    <string name="respuesta3_pregunta7_examteorico_conversiones">2 meters</string>
+    <string name="respuesta4_pregunta7_examteorico_conversiones">1.5 meters</string>
+
+    <string name="pregunta_ocho_conversiones_teorico">Convert 2.5 feet to inches</string>
+    <string name="respuesta1_pregunta8_examteorico_conversiones">30 inches</string>
+    <string name="respuesta2_pregunta8_examteorico_conversiones">28 inches</string>
+    <string name="respuesta3_pregunta8_examteorico_conversiones">25 inches</string>
+    <string name="respuesta4_pregunta8_examteorico_conversiones">27.5 inches</string>
+
+    <string name="pregunta_nueve_conversiones_teorico">Convert 1 gallon to liters</string>
+    <string name="respuesta1_pregunta9_examteorico_conversiones">3.5 liters</string>
+    <string name="respuesta2_pregunta9_examteorico_conversiones">4,356 liters</string>
+    <string name="respuesta3_pregunta9_examteorico_conversiones">4 liters</string>
+    <string name="respuesta4_pregunta9_examteorico_conversiones">3.785 liters</string>
+
+    <string name="pregunta_diez_conversiones_teorico">Convert 4 gallons to liters</string>
+    <string name="respuesta1_pregunta10_examteorico_conversiones">16,956 liters</string>
+    <string name="respuesta2_pregunta10_examteorico_conversiones">14 liters</string>
+    <string name="respuesta3_pregunta10_examteorico_conversiones">15,139 liters</string>
+    <string name="respuesta4_pregunta10_examteorico_conversiones">16 liters</string>
+
+
+    <!--TODO: datos extras repetitivos-->
+    <string name="newtons">Newtons</string>
+    <string name="grados">Degrees</string>
+    <string name="metros">Meters</string>
+    <string name="centimetros">Centimeters</string>
+    <string name="help">Help?</string>
+    <string name="aceleracion">Acceleration</string>
+    <string name="tension">Tension</string>
+    <string name="kilonewtons">Kilonewtons</string>
+    <string name="examen_practico">Practical test</string>
+    <string name="examen_teorico">Theoric exam</string>
+
+    <!--TODO: edite aqui el las respuestas y preguntas del examen practico vectores-->
+    <string name="problema1_exampractico_vectores">Two forces act on a point object in the following way: 100N at 170 degrees and 100N at 50 degrees. Do you calculate your result?</string>
+    <string name="problema2_exampractico_vectores">Algebraically calculate the resultant of the following coplanar displacements: 20m at 30 degrees, 40m at 120 degrees, 25m at 180 degrees, 42m at 270 degrees and 12m at 315 degrees.</string>
+    <string name="problema3_exampractico_vectores">What displacement must be added to another 50 cm in the + x direction so that the resulting displacement is 85 cm at 28 degrees?</string>
+    <string name="problema4_exampractico_vectores">The x component of a displacement is 450m. Calculate the resulting displacement from 85cm to 25 degrees?</string>
+    <string name="formula1_formulario_vectores">C² = a² + b² - 2ab×cos⁡θ</string>
+    <string name="formula2_formulario_vectores">A÷senα = B÷senβ = C÷senC</string>
+
 
 </resources>

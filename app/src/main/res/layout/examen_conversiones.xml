@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/cardViewExamen"
+    tools:ignore="TooManyViews">
+
+    <LinearLayout
+       style="@style/layoutContainer">
+
+        <LinearLayout
+            android:id="@+id/preguntaUnoConversiones"
+            style="@style/layoutPreguntas">
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/pregunta_uno_conversiones_teorico"/>
+
+        <View
+           style="@style/separador"/>
+
+        <RadioGroup
+            style="@style/radioButtonRespuesta">
+
+            <RadioButton
+                android:text="@string/respuesta1_pregunta1_examteorico_conversiones"
+                style="@style/radioButtonRespuesta"/>
+            <RadioButton
+                android:text="@string/respuesta2_pregunta1_examteorico_conversiones"
+                style="@style/radioButtonRespuesta"/>
+            <RadioButton
+                android:text="@string/respuesta3_pregunta1_examteorico_conversiones"
+                style="@style/radioButtonRespuesta"/>
+            <RadioButton
+                android:text="@string/respuesta4_pregunta1_examteorico_conversiones"
+                style="@style/radioButtonRespuesta"/>
+        </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaDosConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_dos_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta2_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta2_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta2_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta2_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaTresConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_tres_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta3_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta3_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta3_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta3_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaCuatroConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_cuatro_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta4_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta4_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta4_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta4_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaCincoConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_cinco_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta5_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta5_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta5_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta5_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaSeisConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_seis_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta6_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta6_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta6_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta6_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaSieteConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_siete_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta7_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta7_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta7_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta7_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaOchoConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_ocho_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta8_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta8_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta8_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta8_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaNueveConversiones"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_nueve_conversiones_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:text="@string/respuesta1_pregunta9_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta2_pregunta9_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta3_pregunta9_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:text="@string/respuesta4_pregunta9_examteorico_conversiones"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/preguntaDiezConversiones"
+        style="@style/layoutPreguntas">
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/pregunta_diez_conversiones_teorico"/>
+        <View
+            style="@style/separador"/>
+        <RadioGroup
+            style="@style/radioButtonRespuesta">
+
+            <RadioButton
+                android:text="@string/respuesta1_pregunta10_examteorico_conversiones"
+                style="@style/radioButtonRespuesta"/>
+            <RadioButton
+                android:text="@string/respuesta2_pregunta10_examteorico_conversiones"
+                style="@style/radioButtonRespuesta" />
+            <RadioButton
+                android:text="@string/respuesta3_pregunta10_examteorico_conversiones"
+                style="@style/radioButtonRespuesta"/>
+            <RadioButton
+                android:text="@string/respuesta4_pregunta10_examteorico_conversiones"
+                style="@style/radioButtonRespuesta"/>
+        </RadioGroup>
+    </LinearLayout>
+        <Button
+            style="@style/buttonCalificar"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

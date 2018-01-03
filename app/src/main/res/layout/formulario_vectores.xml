@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolorwhite">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/barra_de_acccione"
+        style="@style/cardActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/close_formulario_vectores"
+                style="@style/buttonCloseDialog"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                style="@style/Base.DialogWindowTitle.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Form"
+                android:textColor="@color/color_grey_dialog" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_below="@id/barra_de_acccione"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/formula1_formulario_vectores"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/formula2_formulario_vectores"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/formula_cxcos_vectores"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/formula_cysen_vectores"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/pitagoras"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
