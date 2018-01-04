@@ -2,16 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardViewExamenVectores"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/dimen_8dp"
-    android:layout_marginEnd="@dimen/dimen_8dp"
-    android:layout_marginTop="@dimen/dimen_8dp"
-    android:clickable="true"
-    android:background="?attr/selectableItemBackground"
-    android:foreground="?attr/selectableItemBackground"
-    card_view:cardCornerRadius="@dimen/carddimen_2dp"
-    card_view:cardElevation="@dimen/carddimen_2dp">
+    style="@style/cardExamenes">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,51 +11,25 @@
 
         <ImageView
             android:id="@+id/imagenExamenVectores"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"/>
+            style="@style/imagenExamen"/>
 
         <TextView
             android:id="@+id/textViewTitleExamVectores"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/titleExamCard"
             android:layout_alignBottom="@id/imagenExamenVectores"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="16dp"
-            android:text="@string/exam_vectores"
-            android:textColor="#fff" />
+            android:text="@string/exam_vectores"/>
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imagenExamenVectores"
-            android:background="@color/bgcolorwhite"
-            android:padding="@dimen/dimen_8dp">
+            style="@style/tabletButtons"
+            android:layout_below="@id/imagenExamenVectores">
 
             <Button
                 android:id="@+id/buttonExamTeoricoVectores"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/teorico_title"
-                android:textColor="@color/buttonColor"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="@dimen/dimen_8dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="@dimen/dimen_8dp"/>
+                style="@style/buttonTeorico"/>
             <Button
                 android:id="@+id/buttonExamPracticoVectores"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/practico_title"
-                android:textColor="@color/buttonColor"
-                android:layout_marginEnd="@dimen/dimen_8dp"
-                android:layout_toStartOf="@id/buttonExamTeoricoVectores"
-                android:background="?attr/selectableItemBackgroundBorderless"/>
+                style="@style/buttonPractico"
+                android:layout_toStartOf="@id/buttonExamTeoricoVectores"/>
         </RelativeLayout>
-
     </RelativeLayout>
-
 </android.support.v7.widget.CardView>

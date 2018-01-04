@@ -37,16 +37,71 @@
         <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
         <item name="cardElevation">@dimen/carddimen_2dp</item>
     </style>
-    <!--TODO: Aqui estan los estilos del fragment exams-->
 
+    <!--TODO: Aqui estan los estilos del fragment exams-->
+    <style name="cardExamenes">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_4dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
+        <item name="cardElevation">@dimen/carddimen_2dp</item>
+    </style>
+
+    <style name="imagenExamen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="buttonTeorico">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/teorico_title</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">@dimen/dimen_8dp</item>
+    </style>
+    <style name="buttonPractico">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/practico_title</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="titleExamCard">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+        <item name="android:textColor">@color/bgcolorwhite</item>
+    </style>
+
+    <style name="tabletButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/bgcolorwhite</item>
+        <item name="android:padding">@dimen/dimen_8dp</item>
+    </style>
 
     <!--TODO: Aqui estan los etilos de los elementos del fragment videos-->
     <style name="cardViewVideos">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/dimen_8dp</item>
-        <item name="android:layout_marginRight">@dimen/dimen_8dp</item>
-        <item name="android:layout_marginTop">@dimen/dimen_4dp</item>
+        <item name="android:layout_marginStart">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
         <item name="android:layout_marginBottom">@dimen/dimen_4dp</item>
         <item name="android:clickable">true</item>
         <item name="android:background">?attr/selectableItemBackground</item>
@@ -146,12 +201,11 @@
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_margin">@dimen/dimen_16dp</item>
     </style>
-
     <!--TODO: elementos de las actividades principales-->
     <style name="layoutPrincipal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+        <item name="android:layout_margin">@dimen/card_margin_horizontal</item>
         <item name="android:paddingRight">@dimen/dimen_8dp</item>
         <item name="android:paddingLeft">@dimen/dimen_8dp</item>
         <item name="cardElevation">@dimen/carddimen_2dp</item>

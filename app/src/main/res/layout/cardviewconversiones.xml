@@ -16,7 +16,6 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"/>
 
-
         <LinearLayout
             android:layout_below="@id/imagenConversiones"
             android:layout_width="match_parent"
