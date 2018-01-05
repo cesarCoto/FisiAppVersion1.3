@@ -154,9 +154,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
-        <item name="android:layout_marginRight">8dp</item>
-        <item name="android:layout_marginLeft">8dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
         <item name="android:background">@color/bgcolorwhite</item>
         <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
         <item name="cardElevation">@dimen/carddimen_2dp</item>
@@ -205,7 +205,10 @@
     <style name="layoutPrincipal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
         <item name="android:paddingRight">@dimen/dimen_8dp</item>
         <item name="android:paddingLeft">@dimen/dimen_8dp</item>
         <item name="cardElevation">@dimen/carddimen_2dp</item>
@@ -292,10 +295,10 @@
     <style name="cardViewExamen">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginTop">4dp</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginEnd">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginStart">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
         <item name="cardElevation">@dimen/carddimen_2dp</item>
         <item name="cardCornerRadius">@dimen/carddimen_2dp</item>
     </style>

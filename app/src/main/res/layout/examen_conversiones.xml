@@ -18,24 +18,30 @@
         <View
            style="@style/separador"/>
 
-        <RadioGroup
-            style="@style/radioButtonRespuesta">
+            <RadioGroup
+                android:id="@+id/grupoRespuestasUno"
+                style="@style/radioButtonRespuesta">
 
-            <RadioButton
-                android:text="@string/respuesta1_pregunta1_examteorico_conversiones"
-                style="@style/radioButtonRespuesta"/>
-            <RadioButton
-                android:text="@string/respuesta2_pregunta1_examteorico_conversiones"
-                style="@style/radioButtonRespuesta"/>
-            <RadioButton
-                android:text="@string/respuesta3_pregunta1_examteorico_conversiones"
-                style="@style/radioButtonRespuesta"/>
-            <RadioButton
-                android:text="@string/respuesta4_pregunta1_examteorico_conversiones"
-                style="@style/radioButtonRespuesta"/>
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaUno"
+                    style="@style/radioButtonRespuesta"
+                    android:text="@string/respuesta1_pregunta1_examteorico_conversiones" />
 
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaUno"
+                    style="@style/radioButtonRespuesta"
+                    android:text="@string/respuesta2_pregunta1_examteorico_conversiones" />
 
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaUno"
+                    style="@style/radioButtonRespuesta"
+                    android:text="@string/respuesta3_pregunta1_examteorico_conversiones" />
+
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaUno"
+                    style="@style/radioButtonRespuesta"
+                    android:text="@string/respuesta4_pregunta1_examteorico_conversiones" />
+            </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
@@ -49,18 +55,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasDos"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaDos"
                     android:text="@string/respuesta1_pregunta2_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaDos"
                     android:text="@string/respuesta2_pregunta2_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaDos"
                     android:text="@string/respuesta3_pregunta2_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaDos"
                     android:text="@string/respuesta4_pregunta2_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -77,18 +88,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasTres"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaTres"
                     android:text="@string/respuesta1_pregunta3_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaTres"
                     android:text="@string/respuesta2_pregunta3_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaTres"
                     android:text="@string/respuesta3_pregunta3_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaTres"
                     android:text="@string/respuesta4_pregunta3_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -105,18 +121,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasCuatro"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaCuatro"
                     android:text="@string/respuesta1_pregunta4_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaCuatro"
                     android:text="@string/respuesta2_pregunta4_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaCuatro"
                     android:text="@string/respuesta3_pregunta4_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaCuatro"
                     android:text="@string/respuesta4_pregunta4_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -133,18 +154,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasCinco"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaCinco"
                     android:text="@string/respuesta1_pregunta5_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaCinco"
                     android:text="@string/respuesta2_pregunta5_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaCinco"
                     android:text="@string/respuesta3_pregunta5_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaCinco"
                     android:text="@string/respuesta4_pregunta5_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -161,18 +187,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasSeis"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaSeis"
                     android:text="@string/respuesta1_pregunta6_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaSeis"
                     android:text="@string/respuesta2_pregunta6_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaSeis"
                     android:text="@string/respuesta3_pregunta6_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaSeis"
                     android:text="@string/respuesta4_pregunta6_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -189,18 +220,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasSiete"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaSiete"
                     android:text="@string/respuesta1_pregunta7_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaSiete"
                     android:text="@string/respuesta2_pregunta7_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaSiete"
                     android:text="@string/respuesta3_pregunta7_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaSiete"
                     android:text="@string/respuesta4_pregunta7_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -217,18 +253,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasOcho"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaOcho"
                     android:text="@string/respuesta1_pregunta8_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaOcho"
                     android:text="@string/respuesta2_pregunta8_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaOcho"
                     android:text="@string/respuesta3_pregunta8_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaOcho"
                     android:text="@string/respuesta4_pregunta8_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -245,18 +286,23 @@
                 style="@style/separador"/>
 
             <RadioGroup
+                android:id="@+id/grupoRespuestasNueve"
                 style="@style/radioButtonRespuesta">
 
                 <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaNueve"
                     android:text="@string/respuesta1_pregunta9_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaDosPreguntaNueve"
                     android:text="@string/respuesta2_pregunta9_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaTresPreguntaNueve"
                     android:text="@string/respuesta3_pregunta9_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
                 <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaNueve"
                     android:text="@string/respuesta4_pregunta9_examteorico_conversiones"
                     style="@style/radioButtonRespuesta"/>
             </RadioGroup>
@@ -271,23 +317,29 @@
         <View
             style="@style/separador"/>
         <RadioGroup
+            android:id="@+id/grupoRespuestasDiez"
             style="@style/radioButtonRespuesta">
 
             <RadioButton
+                android:id="@+id/respuestaUnoPreguntaDiez"
                 android:text="@string/respuesta1_pregunta10_examteorico_conversiones"
                 style="@style/radioButtonRespuesta"/>
             <RadioButton
+                android:id="@+id/respuestaDosPreguntaDiez"
                 android:text="@string/respuesta2_pregunta10_examteorico_conversiones"
                 style="@style/radioButtonRespuesta" />
             <RadioButton
+                android:id="@+id/respuestaTresPreguntaDiez"
                 android:text="@string/respuesta3_pregunta10_examteorico_conversiones"
                 style="@style/radioButtonRespuesta"/>
             <RadioButton
+                android:id="@+id/respuestaCuatroPreguntaDiez"
                 android:text="@string/respuesta4_pregunta10_examteorico_conversiones"
                 style="@style/radioButtonRespuesta"/>
         </RadioGroup>
     </LinearLayout>
         <Button
+            android:id="@+id/buttonCalificarConversiones"
             style="@style/buttonCalificar"/>
     </LinearLayout>
 </android.support.v7.widget.CardView>
