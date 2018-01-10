@@ -43,8 +43,6 @@ public class ExamenesFragment extends Fragment implements View.OnTouchListener, 
     Button buttonExamPracticoVectores;
     @BindView(R.id.buttonExamTeoricoMagnitudes)
     Button buttonExamTeoricoMagnitudes;
-    @BindView(R.id.buttonExamPracticoMagnitudes)
-    Button buttonExamPracticoMagnitudes;
     @BindView(R.id.buttonnExamTeoricoNewton)
     Button buttonnExamTeoricoNewton;
     @BindView(R.id.buttonExamPracticoNewton)
@@ -87,7 +85,6 @@ public class ExamenesFragment extends Fragment implements View.OnTouchListener, 
         //se enlazan los onClickListener a los botones
         buttonExampracticoConversiones.setOnClickListener(this);
         buttonExamPracticoVectores.setOnClickListener(this);
-        buttonExamPracticoMagnitudes.setOnClickListener(this);
         buttonExamPracticoNewton.setOnClickListener(this);
         //examenes teoricos
         buttonExamTeoricoVectores.setOnClickListener(this);
@@ -131,11 +128,6 @@ public class ExamenesFragment extends Fragment implements View.OnTouchListener, 
             case R.id.buttonExamPracticoVectores:
                 Intent intentEPvectores = new Intent(getActivity(),ExamenPracticoVectoresActivity.class);
                 startActivity(intentEPvectores);
-                break;
-
-            case R.id.buttonExamPracticoMagnitudes:
-                Intent intentEPmagnitudes = new Intent(getActivity(),ExamenPracticoMagnitudesActivity.class);
-                startActivity(intentEPmagnitudes);
                 break;
 
             case R.id.buttonExamPracticoNewton:

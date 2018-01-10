@@ -14,7 +14,7 @@ import java.util.List;
 public class VectorsActivity extends AppCompatActivity {
 
     //se crean objetos para enlazarlos con las vistas
-    /**estos opjetos son creamos para poder hacer funcionar la activityTab*/
+    /**estos objetos son creamos para poder hacer funcionar la activityTab*/
     TabLayout tabLayoutContainerVectorsActivity;
     ViewPager viewPagerVectorsActivity;
     @Override

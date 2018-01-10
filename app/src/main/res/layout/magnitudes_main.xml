@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Aqui esta la primera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/title_magnitudes_escalares"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo1_magnitudes"/>
+
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/examples_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/examples_magnitudes_uno"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

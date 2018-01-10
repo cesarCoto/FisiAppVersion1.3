@@ -24,6 +24,15 @@
         <item name="cardElevation">@dimen/carddimen_2dp</item>
     </style>
 
+    <style name="imagenCardHome">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
     <style name="cardViewDerecha">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>

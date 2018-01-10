@@ -66,13 +66,6 @@
                 android:value=".MainActivity"/>
         </activity>
 
-        <activity android:name=".ExamenPracticoMagnitudesActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
-        </activity>
-
         <activity android:name=".ExamenPracticoNewtonActivity"
             android:windowSoftInputMode="stateHidden|stateUnchanged"
             android:parentActivityName=".MainActivity">

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Aqui esta la primera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/title_magnitudes_fundamentales"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo3_magnitudes"/>
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/masa_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo4_magnitudes"/>
+
+
+        <!--Segunda magnitud-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/longitud_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo5_magnitudes"/>
+
+        <!--Tercera magnitud-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/tiempo_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo6_magnitudes"/>
+
+        <!--Cuarta magnitud-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/conrriente_electrica_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo7_magnitudes"/>
+
+        <!--Quinta magnitud-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/temperatura_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo8_magnitudes"/>
+
+        <!--Sexta magnitud-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/intensidad_luminosa_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo9_magnitudes"/>
+
+        <!--Septima magnitud-->
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/mol_title"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo10_magnitudes"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

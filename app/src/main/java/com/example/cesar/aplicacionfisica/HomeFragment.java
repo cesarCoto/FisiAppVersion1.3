@@ -87,6 +87,7 @@ public class HomeFragment extends Fragment implements View.OnTouchListener, View
         unbinder = ButterKnife.bind(this, view);
         return view;
     }
+    //este metodo asigna las imagenes con ayuda de la libreria glide
     private void asignarImagenes(){
         int[] imagens = {R.drawable.conversiones_img,R.drawable.vectores_img,R.drawable.magnitudes_img,
                 R.drawable.primera_ley_new_img,R.drawable.segunda_ley_new_img,R.drawable.tercera_lew_new_img};
@@ -94,8 +95,13 @@ public class HomeFragment extends Fragment implements View.OnTouchListener, View
         View[] views = {imageViewConversiones,imageViewVectores,imageViewMagnitudes,imageViewPrimeraLey,
                 imageViewSegundaLey,imageViewTerceraLey};
 
-        for (int i = 0; i<6; i++){
+        RequestOptions options = new RequestOptions();
+        options.fitCenter();
+
+        options.placeholder(R.drawable.physics);
+       for (int i = 0; i<6; i++){
             Glide.with(getContext()).load(imagens[i]).into((ImageView) views[i]);
+
         }
     }
     @Override

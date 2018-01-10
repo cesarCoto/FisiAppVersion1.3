@@ -20,7 +20,7 @@ public class ConversionesActivity extends AppCompatActivity {
     /***********************************************************************************************/
 
     //se crean objetos para enlazarlos con las vistas
-    /**estos opjetos son creamos para poder hacer funcionar la activityTab*/
+    /**estos objetos son creamos para poder hacer funcionar la activityTab*/
     TabLayout tabLayoutContainerConversionesActivity;
     ViewPager viewPagerConversionesActivity;
 
@@ -32,9 +32,11 @@ public class ConversionesActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //se activa el boton ir atras
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        //se inician las paginas de la actividad
         inViewPager();
     }
     private void inViewPager(){

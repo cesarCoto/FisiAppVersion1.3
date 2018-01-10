@@ -34,7 +34,7 @@
 
 
     <string name="version_app">Version 1.3</string>
-    <string name="ok_button">Ok</string>
+    <string name="ok_button">OK</string>
     <string name="more_button">More</string>
     <string name="item_uno_carac">1- New design</string>
     <string name="item_dos_carac">2- Reduced the size of the apk file</string>
@@ -137,6 +137,42 @@
     <string name="respuesta_conversiones_ejemplo3_parte1">5L/s * 1m³/1000L * 3600s/1h = 180000m³/1000h</string>
     <string name="respuesta_conversiones_ejemplo3_parte2">180000m³÷1000h = 180m³/h</string>
 
+    <!--TODO: edite aqui el contenido de la actividad Magnitudes-->
+    <string name="title_magnitudes_escalares">Scalar magnitudes</string>
+    <string name="parrafo1_magnitudes">They are easy to recognize physical magnitudes, since to identify them we only need to know their magnitude, in some cases it is necessary to accompany them in the unit of measurement like the ones mentioned below.</string>
+    <string name="examples_magnitudes_uno">speed, mass, time, distance, area, perimeter, density, volume, temperature, etc.</string>
+    <string name="title_magnitudes_vectoriales">Vector magnitude</string>
+    <string name="parrafo2_magnitudes">Is one that, in addition to a numerical value and its units (module) we must specify its direction and meaning.</string>
+    <string name="examples_magnitudes_dos">Weight, force, acceleration, speed, torsion, etc.</string>
+    <string name="title_magnitudes_fundamentales">Fundamental magnitudes</string>
+    <string name="parrafo3_magnitudes">The fundamental units are defined independently and, often, the quantities are directly measurable in a physical system. They do not depend on any other physical magnitude. \n\n ~There are a total of seven fundamental magnitudes</string>
+    <string name="masa_title">Mass</string>
+    <string name="parrafo4_magnitudes">kilogram (kg) It is defined by the mass of a platinum-iridium cylinder prototype maintained at the International Bureau of Weights and Measures in Paris, France.</string>
+    <string name="longitud_title">Length</string>
+    <string name="parrafo5_magnitudes">meter (m) It is defined as the length of the path traveled by light in a range of exactly 1/299792458 seconds.</string>
+    <string name="tiempo_title">Time</string>
+    <string name="parrafo6_magnitudes">Second (s) According to the International System of Units, it is the time of 192,631,770 periods of oscillations of the light emitted by a cesium -133 atoms corresponds to the transition between two hyperfine levels of the ground state.</string>
+    <string name="conrriente_electrica_title">Electric current</string>
+    <string name="parrafo7_magnitudes">Ampere (A) Measure the intensity of electric current. It is defined by the constant current that if it flows in two parallel straight conductors of infinite length and negligible section circulates, when it is 1 meter away in the vacuum, it produces a force equal to 2 × 10 − 7 Newton per meter of length between these drivers.</string>
+    <string name="temperatura_title">Temperature</string>
+    <string name="parrafo8_magnitudes">kelvin (K) According to the International System of Units, the kelvin is exactly 1 / 273.16 of the thermodynamic temperature of the triple point of water.</string>
+    <string name="intensidad_luminosa_title">Luminous intensity</string>
+    <string name="parrafo9_magnitudes">candela (cd) It measures the light intensity of a source that emits a radiation of a constant frequency of 540 × 1012 Hz with a radiant intensity of 1/683 watts per stereo in any given direction.</string>
+    <string name="mol_title">mol</string>
+    <string name="parrafo10_magnitudes">(mol) The mole is the amount of substance that contains as many entities as atoms in 0.012 kg of carbon-12.</string>
+    <string name="title_magnitudes_derivadas">Derived quantities</string>
+    <string name="parrafo11_magnitudes">The derived quantities are formed by the product of the powers of the fundamental units, these units are not defined independently, since they depend on the definition of other units. Except for the 7 fundamental magnitudes named above, all other magnitudes are derived. Some examples of derived quantities are:</string>
+    <string name="unidad_de_trabajo_title">Unit of work</string>
+    <string name="parrafo12_magnitudes">Joule or July (J) It is the work done when the point of application of the force of a newton (1 N) moves at a distance of one meter (1 m) in the direction of force.</string>
+    <string name="fuerza_title">Force</string>
+    <string name="parrafo13_magnitudes">Newton (N) It is that force that, when applied to a body with a mass of one kilogram (1 kg), gives an acceleration of one meter per second squared (1 mx s2).</string>
+    <string name="presion_title">Pressure</string>
+    <string name="parrafo14_magnitudes">pascal (Pa) It is the pressure that results when a force of a newton (1 N) is applied uniformly and perpendicularly to a surface of one square meter (1 m2).</string>
+    <string name="potencial_eletrico_title">Electrical potential</string>
+    <string name="parrafo15_magnitudes">volt (V) It is the potential difference between two points of a conduction cable that carries a constant current of one ampere (1 A), when the power dissipated between these points is one Watt (1 W).</string>
+
+
+
     <!--TODO: edite aqui las preguntas y respuestas del examen Conversiones-->
     <string name="pregunta_uno_conversiones_teorico">Convert 1 mile to meters</string>
     <string name="respuesta1_pregunta1_examteorico_conversiones">16 meters</string>
@@ -210,6 +246,8 @@
     <string name="kilonewtons">Kilonewtons</string>
     <string name="examen_practico">Practical test</string>
     <string name="examen_teorico">Theoric exam</string>
+    <string name="verdadero">True</string>
+    <string name="falso">False</string>
 
     <!--TODO: edite aqui el contenido las respuestas y preguntas del examen practico vectores-->
     <string name="problema1_exampractico_vectores">Two forces act on a point object in the following way: 100N at 170 degrees and 100N at 50 degrees. Do you calculate your result?</string>
@@ -219,7 +257,7 @@
     <string name="formula1_formulario_vectores">C² = a² + b² - 2ab×cos⁡θ</string>
     <string name="formula2_formulario_vectores">A÷senα = B÷senβ = C÷senC</string>
 
-    <!--TODO: edite aqui el contenido de las resputas y de preguntas del examen teorico vectores-->
+    <!--TODO: edite aqui el contenido de las respuestas y de preguntas del examen teorico vectores-->
     <string name="pregunta_uno_vectores_teorico">Is every vector one?</string>
     <string name="respuesta1_pregunta1_examteorico_vectores">Physical magnitude</string>
     <string name="respuesta2_pregunta1_examteorico_vectores">Vector magnitude</string>
@@ -274,6 +312,56 @@
     <string name="respuesta2_pregunta10_examteorico_vectores">It is identified with uppercase letters at the ends.</string>
     <string name="respuesta3_pregunta10_examteorico_vectores">It participates as an axis in a Cartesian plane.</string>
     <string name="respuesta4_pregunta10_examteorico_vectores">Part of an origin finding an image that unites them.</string>
+
+
+    <!--TODO: edite aqui las preguntas y respuestas de la actividad examen teorico magnitudes-->
+
+    <string name="pregunta_uno_magnitudes_teorico">The unit of mass in the International System is</string>
+    <string name="respuesta1_pregunta1_examteorico_magnitudes">Gram</string>
+    <string name="respuesta2_pregunta1_examteorico_magnitudes">Ton</string>
+    <string name="respuesta3_pregunta1_examteorico_magnitudes">Kilogramo</string>
+
+    <string name="pregunta_dos_magnitudes_teorico">If we measure the height of a person, the magnitude we are measuring is called length:</string>
+
+    <string name="pregunta_tres_magnitudes_teorico">Indicate which of these belongs to the international system unit:</string>
+    <string name="respuesta1_pregunta3_examteorico_magnitudes">Celsius degrees</string>
+    <string name="respuesta2_pregunta3_examteorico_magnitudes">Mol</string>
+    <string name="respuesta3_pregunta3_examteorico_magnitudes">Hour</string>
+
+    <string name="pregunta_cuatro_magnitudes_teorico">The surface is a fundamental quantity</string>
+
+    <string name="pregunta_cinco_magnitudes_teorico">Magnitude is everything that can be measured:</string>
+
+    <string name="pregunta_seis_magnitudes_teorico">Select the derived magnitude:</string>
+    <string name="respuesta1_pregunta6_examteorico_magnitudes">Volume</string>
+    <string name="respuesta2_pregunta6_examteorico_magnitudes">Mass</string>
+    <string name="respuesta3_pregunta6_examteorico_magnitudes">Time</string>
+    <string name="respuesta4_pregunta6_examteorico_magnitudes">Length</string>
+
+    <string name="pregunta_siete_magnitudes_teorico">Which of the following statements is NOT true?</string>
+    <string name="respuesta1_pregunta7_examteorico_magnitudes">Mass and time are fundamental magnitudes.</string>
+    <string name="respuesta2_pregunta7_examteorico_magnitudes">The volume is a fundamental quantity</string>
+    <string name="respuesta3_pregunta7_examteorico_magnitudes">Speed is a derived quantity.</string>
+    <string name="respuesta4_pregunta7_examteorico_magnitudes">The derived quantities are obtained from the fundamental quantities.</string>
+
+    <string name="pregunta_ocho_magnitudes_teorico">The unit of length in the International system is:</string>
+    <string name="respuesta1_pregunta8_examteorico_magnitudes">Meter</string>
+    <string name="respuesta2_pregunta8_examteorico_magnitudes">The kilometer</string>
+    <string name="respuesta3_pregunta8_examteorico_magnitudes">The mile</string>
+    <string name="respuesta4_pregunta8_examteorico_magnitudes">The centimeter</string>
+
+    <string name="pregunta_nueve_magnitudes_teorico">The units of the International System are:</string>
+    <string name="respuesta1_pregunta9_examteorico_magnitudes">Meter, Kilogram, minute</string>
+    <string name="respuesta2_pregunta9_examteorico_magnitudes">Centimeter, gram, second</string>
+    <string name="respuesta3_pregunta9_examteorico_magnitudes">Meter, gram, second</string>
+    <string name="respuesta4_pregunta9_examteorico_magnitudes">Meter, Kilogram, second</string>
+
+    <string name="pregunta_diez_magnitudes_teorico">The scalar quantity is:</string>
+    <string name="respuesta1_pregunta10_examteorico_magnitudes">Speed</string>
+    <string name="respuesta2_pregunta10_examteorico_magnitudes">Time</string>
+    <string name="respuesta3_pregunta10_examteorico_magnitudes">The force</string>
+    <string name="respuesta4_pregunta10_examteorico_magnitudes">The weight</string>
+
 
 
 </resources>

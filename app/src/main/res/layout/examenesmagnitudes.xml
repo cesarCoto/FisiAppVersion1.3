@@ -26,10 +26,6 @@
             <Button
                 android:id="@+id/buttonExamTeoricoMagnitudes"
                 style="@style/buttonTeorico"/>
-            <Button
-                android:id="@+id/buttonExamPracticoMagnitudes"
-                style="@style/buttonPractico"
-                android:layout_toStartOf="@id/buttonExamTeoricoMagnitudes"/>
         </RelativeLayout>
     </RelativeLayout>
 </android.support.v7.widget.CardView>
