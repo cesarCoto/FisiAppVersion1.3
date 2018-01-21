@@ -172,6 +172,40 @@
     <string name="parrafo15_magnitudes">volt (V) It is the potential difference between two points of a conduction cable that carries a constant current of one ampere (1 A), when the power dissipated between these points is one Watt (1 W).</string>
 
 
+    <!--TODO: edite aqui el contenido de la actividad primera ley de newton.-->
+    <string name="title_ley_de_inercia">Inertia law.</string>
+    <string name="parrafo1_ley_de_inercia">“Every free body, over which no force acts, maintains its state of movement, either at rest, or in a uniform rectilinear motion.”</string>
+    <string name="parrafo2_ley_de_inercia">\n The principle of inertia is fulfilled when no forces act on a body or when the acting forces counteract each other. Concisely, this law postulates that a body can not change its initial state by itself, either in rest or in uniform rectilinear motion, unless a force or a series of forces is applied resulting is not null about it. \n \n In reality, it is impossible to find an inertial reference system, since there is always some kind of forces acting on the bodies, but it is always possible to find a reference system in which the problem that we are studying can be treated as if we were in an inertial system. In many in some cases, supposing a fixed observer on Earth is a good approximation of the inertial system.</string>
+    <string name="parrafo3_primera_ley">An example of this law is when you stumble and continue to move.</string>
+
+    <!--TODO: edite aqui los ejemplos de la actividad primera ley de newton-->
+    <string name="examples1_title">Example number 1</string>
+    <string name="problema1_primera_ley_datos">P = 10N \n \n f = 12N  \n \n  a = ?</string>
+    <string name="problema1_primera_ley_formulas">m = p÷g  \n \n a= Fr÷m</string>
+    <string name="problema1_primera_ley_indicacion1">Convert weight to mass</string>
+    <string name="problema1_primera_ley_paso1">\n m = p÷g → 10N÷9.8 = 1.02kg \n m = 1.02kg</string>
+    <string name="problema1_primera_ley_paso2">\n With the mass obtained, the values in the formula are changed a = Fr÷m</string>
+    <string name="respuesta_problema1_primera_ley">\n a = Fr÷m → 12÷1.02 = 11.76m/s² a = 11.76m/s²</string>
+
+
+
+    <!--TODO: edite aqui el contennido de la actividad segunda ley de newton-->
+    <string name="title_ley_fundamental_de_la_dinamica">Fundamental law of dynamics</string>
+    <string name="parrafo1_segunda_ley">“Every body on which a force acts moves in such a way that the variation of it\'s the amount of movement with respect to time is equal to the force produced by the movement.” \n \n He express with the following formula</string>
+    <string name="formula1_newtonn">F = a × m</string>
+    <string name="parrafo2_segunda_ley">In which m is mass, force and acceleration. The last two are Vector magnitudes. If several forces act simultaneously on a body, we can also apply the fundamental formula of the dynamics. In this case, the force that appears in the first member will result from all the forces to which the body is submitted.</string>
+    <string name="parrafo3_segunda_ley">\nNewton\'s Second Law is responsible for quantifying the concept of force. Us says that the net force applied to a body is proportional to the acceleration that acquires said body.</string>
+    <string name="parrafo4_segunda_ley">The expression of Newton\'s Second Law that we have given is valid for bodies whose mass is constant. If the mass varies, such as a rocket that is burning fuel, the relation F = m × a is not valid.</string>
+    <!--TODO: edite aqui el contennido de la actividad segunda ley de newton-->
+    <string name="problema1_segunda_ley_datos">a = 0.5m/s² \n p = 50N \n T = ?</string>
+    <string name="problema_seguda_ley_formula">T = p − ma</string>
+    <string name="problema1_segunda_ley_resolucion1">\nm = 50N ÷ 9.8m/s² = 5.1kg</string>
+    <string name="problema1_segunda_ley_indicacion">\nWith the mass obtained, the values in the formula are changed T = p − ma</string>
+    <string name="problema1_segunda_ley_resolucion2">\nT = 50N − (5.1kg) (0.5m²)</string>
+    <string name="proble1_segunda_ley_resolucion_final">\n T = 50N − 2.55 = 47.45N → T = 47.45N</string>
+
+
+
 
     <!--TODO: edite aqui las preguntas y respuestas del examen Conversiones-->
     <string name="pregunta_uno_conversiones_teorico">Convert 1 mile to meters</string>
@@ -361,7 +395,5 @@
     <string name="respuesta2_pregunta10_examteorico_magnitudes">Time</string>
     <string name="respuesta3_pregunta10_examteorico_magnitudes">The force</string>
     <string name="respuesta4_pregunta10_examteorico_magnitudes">The weight</string>
-
-
 
 </resources>

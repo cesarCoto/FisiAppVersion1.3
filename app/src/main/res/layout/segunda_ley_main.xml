@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Aqui esta la primera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/title_ley_fundamental_de_la_dinamica"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:textStyle="italic"
+            android:text="@string/parrafo1_segunda_ley"/>
+
+
+        <TextView
+            style="@style/subtitleTextview"
+            android:text="@string/formula1_newtonn"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo2_segunda_ley" />
+
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo3_segunda_ley"/>
+
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+            <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/rocket"/>
+        </FrameLayout>
+        <TextView
+            style="@style/textIndication"
+            android:text="@string/parrafo4_segunda_ley"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

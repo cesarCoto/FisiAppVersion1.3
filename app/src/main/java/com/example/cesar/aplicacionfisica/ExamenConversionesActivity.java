@@ -3,9 +3,14 @@ package com.example.cesar.aplicacionfisica;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -122,12 +127,15 @@ public class ExamenConversionesActivity extends AppCompatActivity {
     // dispositivo*/
     private int[] radioChecked;
 
+    View viewLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_examen_conversiones);
         ButterKnife.bind(this);
 
+        LayoutInflater layoutInflater = getLayoutInflater();
+        viewLayout = layoutInflater.inflate(R.layout.custom_toast,(ViewGroup) findViewById(R.id.cutom_toast));
         //iniciamos el metodo verificar para saber si es que el layout se a refrescado o es su
         /*primera vez que se inicia*/
         verificarEstadoAnterior(savedInstanceState);
@@ -146,6 +154,15 @@ public class ExamenConversionesActivity extends AppCompatActivity {
                     grupoRespuestasNueve.getCheckedRadioButtonId(),
                     grupoRespuestasDiez.getCheckedRadioButtonId()};
         }
+        buttonCalificarConversiones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(ExamenConversionesActivity.this,"Toast:GRAVITY.TOP",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.setView(viewLayout);
+                toast.show();
+            }
+        });
     }
     //este metodo guarda el estado de los checkbox
     @Override

@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
                                 Intent intentPorgramaDeActualizaciones =
                                         new Intent(MainActivity.this, WebViewActivity.class);
                                 intentPorgramaDeActualizaciones.putExtra("Web",
-                                        "https://drive.google.com/open?id=1yN1Jw-tDODrvimuxW09M5m51Cip11JQW");
+                                        "https://sites.google.com/view/datosfisiapp/p%C3%A1gina-principal");
                                 startActivity(intentPorgramaDeActualizaciones);
                             }
                         })

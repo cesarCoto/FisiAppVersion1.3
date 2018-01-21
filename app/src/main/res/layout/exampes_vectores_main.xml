@@ -9,7 +9,7 @@
         <!--TODO: Primer problema-->
         <TextView
             style="@style/titleTextView"
-            android:text="Example number 1"/>
+            android:text="@string/examples1_title"/>
 
         <View
             style="@style/separador"/>

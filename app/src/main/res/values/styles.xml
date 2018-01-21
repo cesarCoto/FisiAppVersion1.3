@@ -286,6 +286,16 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <style name="textIndication">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimen_4dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_4dp</item>
+        <item name="android:padding">@dimen/dimen_16dp</item>
+        <item name="android:background">@color/bg_color</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
     <style name="fragmentStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

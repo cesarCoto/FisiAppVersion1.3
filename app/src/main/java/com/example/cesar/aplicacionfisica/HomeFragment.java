@@ -9,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -181,6 +183,7 @@ public class HomeFragment extends Fragment implements View.OnTouchListener, View
             case R.id.cardViewTerceraLey:
                 Intent intentShowActivityTerceraLey = new Intent(getActivity(), TerceraLeyActivity.class);
                 startActivity(intentShowActivityTerceraLey);
+
                 break;
         }
     }
