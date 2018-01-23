@@ -9,102 +9,94 @@
        style="@style/layoutContainer">
 
         <LinearLayout
-            android:id="@+id/problemaUnoVectores"
+            android:id="@+id/problemaUnoNewton"
             style="@style/layoutPreguntas">
         <TextView
             style="@style/textViewProblema"
-            android:text="@string/problema1_exampractico_vectores"/>
+            android:text="@string/problema1_newton_practico"/>
         <android.support.design.widget.TextInputLayout
             style="@style/textInputLayout">
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/respuesta_newtons_problema_uno_vectores"
+                android:id="@+id/respuesta_newtons_problema_uno_newton"
                 style="@style/textInputTypeNumber"
                 android:hint="@string/newtons"/>
         </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-                style="@style/textInputLayout">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/respuesta_grados_problema_uno_vectores"
-                style="@style/textInputTypeNumber"
-                android:hint="@string/grados"/>
-        </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/problemaDosVectores"
+            android:id="@+id/problemaDosNewton"
             style="@style/layoutPreguntas">
             <TextView
                 style="@style/textViewProblema"
-                android:text="@string/problema2_exampractico_vectores"/>
+                android:text="@string/problema2_newton_practico"/>
 
             <android.support.design.widget.TextInputLayout
                 style="@style/textInputLayout">
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/respuesta_metros_problema2_uno_vectores"
-                    style="@style/textInputTypeNumber"
-                    android:hint="@string/metros"/>
+                    android:id="@+id/respuesta_aceleracion_problema2_uno_newton"
+                    style="@style/textInputTypeNumberDecimal"
+                    android:hint="@string/aceleracion"/>
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
                 style="@style/textInputLayout">
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/respuesta_grados_problema2_uno_vectores"
+                    android:id="@+id/respuesta_tension_problema2_uno_newton"
                     style="@style/textInputTypeNumber"
-                    android:hint="@string/grados"/>
+                    android:hint="@string/tension"/>
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/problemaTresVectores"
+            android:id="@+id/problemaTresNewtron"
             style="@style/layoutPreguntas">
             <TextView
                 style="@style/textViewProblema"
-                android:text="@string/problema3_exampractico_vectores"/>
+                android:text="@string/problema3_newton_practico"/>
 
             <android.support.design.widget.TextInputLayout
                 style="@style/textInputLayout">
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/respuesta_centimetros_problema3_uno_vectores"
+                    android:id="@+id/respuesta_tension_problema3_uno_newton"
                     style="@style/textInputTypeNumber"
-                    android:hint="@string/centimetros"/>
-            </android.support.design.widget.TextInputLayout>
-            <android.support.design.widget.TextInputLayout
-                style="@style/textInputLayout">
-
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/respuesta_grados_problema3_uno_vectores"
-                    style="@style/textInputTypeNumber"
-                    android:hint="@string/grados"/>
+                    android:hint="@string/tension"/>
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/preguntaCuatroVectores"
+            android:id="@+id/preguntaCuatroNewton"
             style="@style/layoutPreguntas">
             <TextView
                 style="@style/textViewProblema"
-                android:text="@string/problema4_exampractico_vectores"/>
+                android:text="@string/problema4_newton_practico"/>
 
 
             <android.support.design.widget.TextInputLayout
                 style="@style/textInputLayout">
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/respuesta_centimetros_problema4_uno_vectores"
-                    style="@style/textInputTypeNumber"
-                    android:hint="@string/centimetros"/>
+                    android:id="@+id/respuesta_aceleracion_problema4_uno_newton"
+                    style="@style/textInputTypeNumberDecimal"
+                    android:hint="@string/aceleracion"/>
             </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaCincoNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/textViewProblema"
+                android:text="@string/problema5_newton_practico"/>
+
+
             <android.support.design.widget.TextInputLayout
                 style="@style/textInputLayout">
-
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/respuesta_grados_problema4_uno_vectores"
-                    style="@style/textInputTypeNumber"
-                    android:hint="@string/grados"/>
+                    android:id="@+id/respuesta_kilonewtons_problema5_uno_newton"
+                    style="@style/textInputTypeNumberDecimal"
+                    android:hint="@string/kilonewtons"/>
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
         <Button
-            android:id="@+id/buttonCalificarExamenPracticoVectores"
             style="@style/buttonCalificar"/>
     </LinearLayout>
 </android.support.v7.widget.CardView>

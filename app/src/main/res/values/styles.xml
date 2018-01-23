@@ -374,6 +374,11 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:inputType">number</item>
     </style>
+    <style name="textInputTypeNumberDecimal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
 
     <!--TODO: edite aqui los estilos de los dialogos(formularaios)-->
     <style name="DialogFullscreen" parent="@android:style/Theme.Material.Light.DialogWhenLarge" tools:targetApi="lollipop">

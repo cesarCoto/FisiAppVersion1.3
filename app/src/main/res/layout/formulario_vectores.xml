@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"
-                android:text="Form"
+                android:text="@string/title_formulario"
                 android:textColor="@color/color_grey_dialog" />
         </LinearLayout>
     </android.support.v7.widget.CardView>

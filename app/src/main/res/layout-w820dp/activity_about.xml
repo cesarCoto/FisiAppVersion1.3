@@ -28,7 +28,17 @@
             <include layout="@layout/cardview_about_version"/>
             <include layout="@layout/cardview_about_datos"/>
             <include layout="@layout/cardview_about_drawables"/>
+            <include layout="@layout/cardview_about_libraly"/>
             <include layout="@layout/cardview_about_more"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="@dimen/dimen_4dp"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:textColor="@color/color_derechos"
+                android:text="@string/fisiapp_2017_all_the_rights_reserved"/>
         </LinearLayout>
     </ScrollView>
     <android.support.design.widget.FloatingActionButton

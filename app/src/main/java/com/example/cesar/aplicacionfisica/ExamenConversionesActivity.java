@@ -8,8 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import butterknife.BindView;
@@ -136,6 +138,8 @@ public class ExamenConversionesActivity extends AppCompatActivity {
 
         LayoutInflater layoutInflater = getLayoutInflater();
         viewLayout = layoutInflater.inflate(R.layout.custom_toast,(ViewGroup) findViewById(R.id.cutom_toast));
+        final TextView textViewResult  = viewLayout.findViewById(R.id.textExamResult);
+        final ImageView imageViewResul = viewLayout.findViewById(R.id.examResult);
         //iniciamos el metodo verificar para saber si es que el layout se a refrescado o es su
         /*primera vez que se inicia*/
         verificarEstadoAnterior(savedInstanceState);
@@ -157,10 +161,61 @@ public class ExamenConversionesActivity extends AppCompatActivity {
         buttonCalificarConversiones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //se crea una variable para guaradar la calificacion
+                int calificacion = 0;
+                if (respuestaTresPreguntaUno.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaDosPreguntaDos.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaDosPreguntaTres.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaTresPreguntaCuatro.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaUnoPreguntaCinco.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaDosPreguntaSeis.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaUnoPreguntaSiete.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaUnoPreguntaOcho.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaCuatroPreguntaNueve.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaTresPreguntaDiez.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+
+                //se crea la varible promedio para mostrar en la calificacion
+                int promedio = calificacion;
+                // se crea la tostada para mostrar
                 Toast toast = Toast.makeText(ExamenConversionesActivity.this,"Toast:GRAVITY.TOP",Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER,0,0);
                 toast.setView(viewLayout);
-                toast.show();
+                if (promedio == 10 || promedio > 5){
+                    String resultadoAprobatorio= getString(R.string.textCongratulations)+ " "+
+                            String.valueOf(promedio)+getString(R.string.numero_de_10);
+
+                    textViewResult.setText(resultadoAprobatorio);
+                    imageViewResul.setImageResource(R.drawable.success);
+                    toast.show();
+
+                }else if (promedio == 5 || promedio < 5){
+
+                    String resultadoNegativo = getString(R.string.textTryAgain) + " "+
+                            String.valueOf(promedio)+getString(R.string.numero_de_10);
+                    textViewResult.setText(resultadoNegativo);
+                    imageViewResul.setImageResource(R.drawable.error);
+                    toast.show();
+                }
             }
         });
     }

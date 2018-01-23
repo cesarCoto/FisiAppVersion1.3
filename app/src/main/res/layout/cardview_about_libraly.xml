@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/cardViewAboutActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewDrawablesAboutActivity"
+            style="@style/textTitleAboutActivity"
+            android:text="@string/title_libraries"/>
+
+        <View
+            android:id="@+id/viewNum3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textViewDrawablesAboutActivity"
+            android:background="@color/bg_color"/>
+        <LinearLayout
+            style="@style/itemAboutActivityAbout"
+            android:id="@+id/linearButterKnife"
+            android:layout_below="@id/viewNum3">
+            <ImageView
+                style="@style/imageDrawAboutActivity"
+                android:src="@drawable/pixabay_icon"/>
+
+            <TextView
+                style="@style/textItemAboutActivity"
+                android:text="@string/title_butterknife"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearGlide"
+            style="@style/itemAboutActivityAbout"
+            android:layout_below="@id/linearButterKnife">
+            <ImageView
+                style="@style/imageDrawAboutActivity"
+                android:src="@drawable/vectors_market_icon"/>
+
+            <TextView
+                style="@style/textItemAboutActivity"
+                android:text="@string/title_glide"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

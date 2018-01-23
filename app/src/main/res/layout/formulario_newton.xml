@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"
-                android:text="Form"
+                android:text="@string/title_formulario"
                 android:textColor="@color/color_grey_dialog" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -47,7 +47,7 @@
                     style="@style/itemFormulario">
                     <TextView
                         style="@style/textViewFormula"
-                        android:text="@string/formula1_formulario_vectores"/>
+                        android:text="@string/formula1_formulario_newton"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -58,7 +58,7 @@
                     style="@style/itemFormulario">
                     <TextView
                         style="@style/textViewFormula"
-                        android:text="@string/formula2_formulario_vectores"/>
+                        android:text="@string/formula2_formulario_newton"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -68,18 +68,7 @@
                     style="@style/itemFormulario">
                     <TextView
                         style="@style/textViewFormula"
-                        android:text="@string/formula_cxcos_vectores"/>
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                style="@style/cardFormulario">
-
-                <LinearLayout
-                    style="@style/itemFormulario">
-                    <TextView
-                        style="@style/textViewFormula"
-                        android:text="@string/formula_cysen_vectores"/>
+                        android:text="@string/formula3_formulario_newton"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -90,7 +79,40 @@
                     style="@style/itemFormulario">
                     <TextView
                         style="@style/textViewFormula"
-                        android:text="@string/pitagoras"/>
+                        android:text="@string/formula4_formulario_newton"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/formula5_formulario_newton"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/formula6_formulario_newton"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/cardFormulario">
+
+                <LinearLayout
+                    style="@style/itemFormulario">
+                    <TextView
+                        style="@style/textViewFormula"
+                        android:text="@string/formula7_formulario_newton"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>

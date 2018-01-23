@@ -3,9 +3,16 @@ package com.example.cesar.aplicacionfisica;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,8 +28,8 @@ public class ExamenTeoricoVectoresActivity extends AppCompatActivity {
     RadioButton respuestaTresPreguntaUnoVectores;
     @BindView(R.id.grupoRespuestasUnoVectores)
     RadioGroup grupoRespuestasUnoVectores;
-    @BindView(R.id.respuestaUnoPreguntaDos)
-    RadioButton respuestaUnoPreguntaDos;
+    @BindView(R.id.respuestaUnoPreguntaDosVectores)
+    RadioButton respuestaUnoPreguntaDosVectores;
     @BindView(R.id.respuestaDosPreguntaDosVectores)
     RadioButton respuestaDosPreguntaDosVectores;
     @BindView(R.id.respuestaTresPreguntaDosVectores)
@@ -106,6 +113,8 @@ public class ExamenTeoricoVectoresActivity extends AppCompatActivity {
     @BindView(R.id.buttonCalificarVectores)
     Button buttonCalificarVectores;
 
+    private View tostada;
+
     //el arreglo es creado para poder retener el estado de los checkBox cuando el usuario gira el
     // dispositivo*/
     private int[] radioChecked;
@@ -117,6 +126,14 @@ public class ExamenTeoricoVectoresActivity extends AppCompatActivity {
         //iniciamos el metodo verificar para saber si es que el layout se a refrescado o es su
         /*primera vez que se inicia*/
         verificarEstadoAnterior(savedInstanceState);
+
+        //se infla el layout de la tostada
+        LayoutInflater inflater = getLayoutInflater();
+        tostada = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.cutom_toast));
+        final TextView textViewResultado = tostada.findViewById(R.id.textExamResult);
+        final ImageView imagenResultado = tostada.findViewById(R.id.examResult);
+
+
         /*si es la primera vez que el layout es inflado se guardara el estado de los checkbox*/
         if(savedInstanceState==null){
             radioChecked = new int[]{
@@ -132,8 +149,85 @@ public class ExamenTeoricoVectoresActivity extends AppCompatActivity {
                     grupoRespuestasDiezVectores.getCheckedRadioButtonId()};
         }
 
-    }
+        buttonCalificarVectores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /**se inicia la el proceso de calificacion del examen**/
 
+                //se crea una varible para la calificacion.
+                int calificacion = 0;
+
+                //pregunta 1
+                if (respuestaDosPreguntaUnoVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 2
+                if (respuestaTresPreguntaDosVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 3
+                if (respuestaDosPreguntaTresVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 4
+                if (respuestaDosPreguntaCuatroVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 5
+                if (respuestaTresPreguntaCincoVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 6
+                if (respuestaCuatroPreguntaSeisVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 7
+                if (respuestaUnoPreguntaSieteVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 8
+                if (respuestaDosPreguntaOchoVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //pregunta 9
+                if (respuestaTresPreguntaNueveVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                if (respuestaUnoPreguntaDiezVectores.isChecked()){
+                    calificacion = calificacion + 1;
+                }
+                //se crea la variable promedio para mostrarla en la Toast
+                int promedio = calificacion;
+
+
+                //se crea la tostada personalizada
+                Toast toastResultado = Toast.makeText(ExamenTeoricoVectoresActivity.this,
+                        "Toast:GRAVITY.TOP",Toast.LENGTH_SHORT);
+                toastResultado.setGravity(Gravity.CENTER, 0,0);
+                toastResultado.setView(tostada);
+
+                //se comprueba si se a pasado el examen
+                if (promedio == 10 || promedio > 5){
+
+                    String resultadoAprobatorio= getString(R.string.textCongratulations)+ " "+
+                            String.valueOf(promedio)+getString(R.string.numero_de_10);
+
+                    textViewResultado.setText(resultadoAprobatorio);
+                    imagenResultado.setImageResource(R.drawable.success);
+                    toastResultado.show();
+
+                }else if (promedio == 5 || promedio < 5){
+
+                    String resultadoNegativo = getString(R.string.textTryAgain) + " "+
+                            String.valueOf(promedio)+getString(R.string.numero_de_10);
+                    textViewResultado.setText(resultadoNegativo);
+                    imagenResultado.setImageResource(R.drawable.error);
+                    toastResultado.show();
+                }
+            }
+        });
+
+    }
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -146,6 +240,7 @@ public class ExamenTeoricoVectoresActivity extends AppCompatActivity {
             setCheckBoxChecked();
         }
     }
+
     //se asigna el estado anterior de los checkbox
     private void setCheckBoxChecked() {
         grupoRespuestasUnoVectores.check(radioChecked[0]);

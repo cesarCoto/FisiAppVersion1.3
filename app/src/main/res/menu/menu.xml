@@ -8,6 +8,4 @@
     <item android:id="@+id/action_queHayDeNuevo"
         android:title="@string/what_is_new_title"/>
 
-    <item android:id="@+id/action_comentarios"
-        android:title="@string/comentarios_title"/>
 </menu>

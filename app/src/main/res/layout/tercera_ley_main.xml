@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layoutPrincipal">
+    <LinearLayout
+        style="@style/layoutInterno">
+
+        <!--TODO: Aqui esta la primera parte-->
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/title_principio_de_accion_y_reaccion"/>
+
+        <View
+            style="@style/separador"/>
+
+        <TextView
+            style="@style/parafoTextview"
+            android:textStyle="italic"
+            android:text="@string/parrafo1_tercera_ley"/>
+
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo2_tercera_ley" />
+
+
+        <TextView
+            style="@style/parafoTextview"
+            android:text="@string/parrafo3_tercera_ley"/>
+
+
+        <FrameLayout
+            style="@style/frameLayoutImageContainer">
+            <ImageView
+                style="@style/imageViewInformation"
+                android:src="@drawable/saltar"/>
+        </FrameLayout>
+        <TextView
+            style="@style/textIndication"
+            android:text="@string/parrafo4_tercera_ley"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

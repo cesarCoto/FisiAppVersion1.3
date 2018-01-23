@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/cardViewExamen"
+    tools:ignore="TooManyViews">
+    <LinearLayout
+       style="@style/layoutContainer">
+
+        <LinearLayout
+            android:id="@+id/preguntaUnoNewton"
+            style="@style/layoutPreguntas">
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/pregunta_uno_newton_teorico"/>
+
+        <View
+           style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasUnoNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaUnoNewton"
+                    style="@style/radioButtonRespuesta"
+                    android:text="@string/respuesta1_pregunta1_examteorico_newton" />
+
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaUnoNewton"
+                    style="@style/radioButtonRespuesta"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta2_pregunta1_examteorico_newton" />
+
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaUnoNewton"
+                    style="@style/radioButtonRespuesta"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta3_pregunta1_examteorico_newton" />
+
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaUnoNewton"
+                    style="@style/radioButtonRespuesta"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta4_pregunta1_examteorico_newton" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaDosNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_dos_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasDosNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaDosNewton"
+                    android:text="@string/verdadero"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaDosNewton"
+                    android:text="@string/falso"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaTresNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_tres_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasTresNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaTresNewton"
+                    android:text="@string/verdadero"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaTresNewton"
+                    android:text="@string/falso"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaCuatroNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_cuatro_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasCuatroNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaCuatroNewton"
+                    android:text="@string/respuesta1_pregunta4_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaCuatroNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta2_pregunta4_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaCuatroNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta3_pregunta4_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaCuatroNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta4_pregunta4_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaCincoNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_cinco_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasCincoNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaCincoNewton"
+                    android:text="@string/respuesta1_pregunta5_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaCincoNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta2_pregunta5_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaCincoNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta3_pregunta5_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaCincoNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta4_pregunta5_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaSeisNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_seis_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasSeisNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaSeisNewton"
+                    android:text="@string/respuesta1_pregunta6_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaSeisNewton"
+                    android:text="@string/respuesta2_pregunta6_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaSeisNewton"
+                    android:text="@string/respuesta3_pregunta6_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaSeisNewton"
+                    android:text="@string/respuesta4_pregunta6_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaSieteNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_siete_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasSieteNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaSieteNewton"
+                    android:text="@string/respuesta1_pregunta7_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaSieteNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta2_pregunta7_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaSieteNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta3_pregunta7_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaSieteNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta4_pregunta7_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaOchoNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_ocho_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasOchoNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaOchoNewton"
+                    android:text="@string/respuesta1_pregunta8_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaOchoNewton"
+                    android:text="@string/respuesta2_pregunta8_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaOchoNewton"
+                    android:text="@string/respuesta3_pregunta8_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaOchoNewton"
+                    android:text="@string/respuesta4_pregunta8_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preguntaNueveNewton"
+            style="@style/layoutPreguntas">
+            <TextView
+                style="@style/titleTextView"
+                android:text="@string/pregunta_nueve_newton_teorico"/>
+
+            <View
+                style="@style/separador"/>
+
+            <RadioGroup
+                android:id="@+id/grupoRespuestasNueveNewton"
+                style="@style/radioButtonRespuesta">
+
+                <RadioButton
+                    android:id="@+id/respuestaUnoPreguntaNueveNewton"
+                    android:text="@string/respuesta1_pregunta9_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaDosPreguntaNueveNewton"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/respuesta2_pregunta9_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaTresPreguntaNueveNewton"
+                    android:text="@string/respuesta3_pregunta9_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+                <RadioButton
+                    android:id="@+id/respuestaCuatroPreguntaNueveNewton"
+                    android:text="@string/respuesta4_pregunta9_examteorico_newton"
+                    style="@style/radioButtonRespuesta"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/preguntaDiezNewton"
+        style="@style/layoutPreguntas">
+        <TextView
+            style="@style/titleTextView"
+            android:text="@string/pregunta_diez_newton_teorico"/>
+        <View
+            style="@style/separador"/>
+        <RadioGroup
+            android:id="@+id/grupoRespuestasDiezNewton"
+            style="@style/radioButtonRespuesta">
+
+            <RadioButton
+                android:id="@+id/respuestaUnoPreguntaDiezNewton"
+                android:text="@string/respuesta1_pregunta10_examteorico_newton"
+                style="@style/radioButtonRespuesta"/>
+            <RadioButton
+                android:id="@+id/respuestaDosPreguntaDiezNewton"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/respuesta2_pregunta10_examteorico_newton"
+                style="@style/radioButtonRespuesta" />
+            <RadioButton
+                android:id="@+id/respuestaTresPreguntaDiezNewton"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/respuesta3_pregunta10_examteorico_newton"
+                style="@style/radioButtonRespuesta"/>
+            <RadioButton
+                android:id="@+id/respuestaCuatroPreguntaDiezNewton"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/respuesta4_pregunta10_examteorico_newton"
+                style="@style/radioButtonRespuesta"/>
+        </RadioGroup>
+    </LinearLayout>
+        <Button
+            android:id="@+id/buttonCalificarNewton"
+            style="@style/buttonCalificar"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

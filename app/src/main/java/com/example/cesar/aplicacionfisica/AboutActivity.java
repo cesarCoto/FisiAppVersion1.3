@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 /***********************************************************************************************/
 
@@ -42,21 +43,18 @@ public class AboutActivity extends AppCompatActivity implements OnClickListener{
         fab.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                /**Se crea un intent especial para mandar un mail.**/
-                //se crea
-                Intent intentMensaje = new Intent(Intent.ACTION_SEND);
-                //se especifican sus datos
-                intentMensaje.setData(Uri.parse("email"));
-                String [] correo = {"developfisiapp@gmail.com"};
-                intentMensaje.putExtra(Intent.EXTRA_EMAIL,correo);
-                intentMensaje.putExtra(Intent.EXTRA_SUBJECT,getString(R.string.app_name));
-                intentMensaje.putExtra(Intent.EXTRA_TEXT,getString(R.string.email_title));
-                intentMensaje.setType("menssage/rfc822");
-
-                /*se crea un intent selector el cual ejecutara una barra en la parte inferior para
-                * que el usuario escoja su aplicacion preferida para mandar un mail*/
-                Intent chooser = Intent.createChooser(intentMensaje,getString(R.string.mandar_un_email));
-                startActivity(chooser);
+                //se crea unn intent explicito para mandar un mail a los desarrolladores.
+                Intent intentSendEmail = new Intent();
+                intentSendEmail.setAction(Intent.ACTION_SENDTO);
+                intentSendEmail.setData(Uri.parse("mailto:devfisiapp@gmail.com"));
+                intentSendEmail.putExtra(Intent.EXTRA_SUBJECT, "About:FisiAppp");
+                /*en caso de no tener instalada la aplicacion de gmail nos notificara y no se podra
+                hacer la funcion*/
+                try {
+                    startActivity(intentSendEmail);
+                } catch (Exception e) {
+                    Toast.makeText(AboutActivity.this, "Email no fount", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

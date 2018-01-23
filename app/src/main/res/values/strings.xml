@@ -19,7 +19,20 @@
     <string name="examples_title">Examples</string>
     <string name="email_title">Hello</string>
     <string name="share_title">Share with</string>
+    <string name="title_libraries">Libraries</string>
+    <string name="title_butterknife">ButterKnife</string>
+    <string name="title_glide">Glide</string>
     <string name="nuestro_blogg_title">Our blogg</string>
+
+
+
+    <string name="textCongratulations">Congratulations, your rating is</string>
+    <string name="textTryAgain">Try again your rating is</string>
+    <string name="numero_de_10">/10</string>
+    <string name="numero_de_5">/5</string>
+    <string name="numero_de_4">/4</string>
+    <string name="instrucccion">For the question to be marked as correct, you must correctly answer both fields.</string>
+    <string name="verifica_tu_estado">Verify your result</string>
 
     <string name="title_activity_magnitudes">MagnitudesActivity</string>
     <string name="title_activity_primera_ley">PrimeraLeyActivity</string>
@@ -188,15 +201,14 @@
     <string name="respuesta_problema1_primera_ley">\n a = Fr÷m → 12÷1.02 = 11.76m/s² a = 11.76m/s²</string>
 
 
-
-    <!--TODO: edite aqui el contennido de la actividad segunda ley de newton-->
+    <!--TODO: edite aqui el contenido de la actividad segunda ley de newton-->
     <string name="title_ley_fundamental_de_la_dinamica">Fundamental law of dynamics</string>
     <string name="parrafo1_segunda_ley">“Every body on which a force acts moves in such a way that the variation of it\'s the amount of movement with respect to time is equal to the force produced by the movement.” \n \n He express with the following formula</string>
     <string name="formula1_newtonn">F = a × m</string>
     <string name="parrafo2_segunda_ley">In which m is mass, force and acceleration. The last two are Vector magnitudes. If several forces act simultaneously on a body, we can also apply the fundamental formula of the dynamics. In this case, the force that appears in the first member will result from all the forces to which the body is submitted.</string>
     <string name="parrafo3_segunda_ley">\nNewton\'s Second Law is responsible for quantifying the concept of force. Us says that the net force applied to a body is proportional to the acceleration that acquires said body.</string>
     <string name="parrafo4_segunda_ley">The expression of Newton\'s Second Law that we have given is valid for bodies whose mass is constant. If the mass varies, such as a rocket that is burning fuel, the relation F = m × a is not valid.</string>
-    <!--TODO: edite aqui el contennido de la actividad segunda ley de newton-->
+    <!--TODO: edite aqui el contenido de los ejemplos de la actividad segunda ley de newton-->
     <string name="problema1_segunda_ley_datos">a = 0.5m/s² \n p = 50N \n T = ?</string>
     <string name="problema_seguda_ley_formula">T = p − ma</string>
     <string name="problema1_segunda_ley_resolucion1">\nm = 50N ÷ 9.8m/s² = 5.1kg</string>
@@ -205,7 +217,20 @@
     <string name="proble1_segunda_ley_resolucion_final">\n T = 50N − 2.55 = 47.45N → T = 47.45N</string>
 
 
+    <!--TODO: edite aqui el contenido de la actividad tercera ley de newton.-->
+    <string name="title_principio_de_accion_y_reaccion">Law of action and reaction</string>
+    <string name="parrafo1_tercera_ley">“With every action there is always an equal and opposite reaction”. \nThat is, actions Mutuals of two bodies are always the same and directed in the opposite direction.</string>
+    <string name="parrafo2_tercera_ley">\nAlso known as Principle of action and reaction tells us essentially that if a body A exerts an action on another body B, this one performs on A another equal and opposite action.</string>
+    <string name="parrafo3_tercera_ley">\nIt states that for each force acting on a body, it performs a force of equal intensity and direction, but in the opposite direction on the body that produced it. Said another form, the forces, located on the same line, are always presented in pairs of equal magnitude and opposite in sense.</string>
+    <string name="parrafo4_tercera_ley">\nThis law is something that we can check daily on numerous occasions. By example, when we want to jump up, we push the ground to boost us The reaction of the soil is what makes us jump up.</string>
 
+    <!--TODO: edite aqui el contenido de los ejemplos de la actividad tercera ley de newton.-->
+    <string name="problema1_tercera_ley">Two boxes of 20 and 30 kg of masses, respectively, are supported on a horizontal surface without friction, one resting on the other. If we push the set with a force of 100N. What is the acceleration of each other? What force will each box exercise over the other?</string>
+    <string name="formula1_tercera_ley">f = (m1 + m2) × a</string>
+    <string name="resolucion1_tercera_ley">\nOn the box 1 act the forces F and F21 in the horizontal direction and on the box 2, the F12 in the same direction. In module F21 = F12</string>
+    <string name="resolucion2_tercera_ley">\nApplying Newton\'s 2nd law F = m * a; to each box:</string>
+    <string name="resolucion3_tercera_ley">\nbox1: F-F21 = m1 * to box2: F12 = m2 * a Addition: F = (m1 + m2) * a; 100 = (20 + 30) * a; a = 2m / s²</string>
+    <string name="resolucion4_tercera_ley">\nAnd substituting in f12 = m2 * a = 20 * 2 = 40N, force exerted by box 1 over 2. The force exerted by box 2 over 1 is equal in module, direction and opposite direction</string>
 
     <!--TODO: edite aqui las preguntas y respuestas del examen Conversiones-->
     <string name="pregunta_uno_conversiones_teorico">Convert 1 mile to meters</string>
@@ -282,6 +307,7 @@
     <string name="examen_teorico">Theoric exam</string>
     <string name="verdadero">True</string>
     <string name="falso">False</string>
+
 
     <!--TODO: edite aqui el contenido las respuestas y preguntas del examen practico vectores-->
     <string name="problema1_exampractico_vectores">Two forces act on a point object in the following way: 100N at 170 degrees and 100N at 50 degrees. Do you calculate your result?</string>
@@ -395,5 +421,78 @@
     <string name="respuesta2_pregunta10_examteorico_magnitudes">Time</string>
     <string name="respuesta3_pregunta10_examteorico_magnitudes">The force</string>
     <string name="respuesta4_pregunta10_examteorico_magnitudes">The weight</string>
+
+    <!--TODO: edite aqui el contenido del formulario leyes de newton-->
+    <string name="title_formulario">Form</string>
+    <string name="formula1_formulario_newton">a = Fr ÷ m</string>
+    <string name="formula2_formulario_newton">f = m × a</string>
+    <string name="formula3_formulario_newton">m = p ÷ g</string>
+    <string name="formula4_formulario_newton">p = m × g</string>
+    <string name="formula5_formulario_newton">-T1 + T2 - f = ma</string>
+    <string name="formula6_formulario_newton">Fr = F - f</string>
+    <string name="formula7_formulario_newton">N = p - Senθ</string>
+
+    <!--TODO: edite aqui el examen  teorico leyes de newton-->
+    <!--EXAMEN TEORICO NUMERO 4-->
+    <string name="pregunta_uno_newton_teorico">What is Newton\'s first law?</string>
+    <string name="respuesta1_pregunta1_examteorico_newton">Every body continues in its state of rest unless a force forces it to change that state.</string>
+    <string name="respuesta2_pregunta1_examteorico_newton">Every body has to maintain at rest so a minina force is applied.</string>
+    <string name="respuesta3_pregunta1_examteorico_newton">The acceleration a body experiences is directly proportional to the force acting on it and inversely proportional to its mass.</string>
+    <string name="respuesta4_pregunta1_examteorico_newton">Depending on if the mass of the body is smaller you will have to go at less speed.</string>
+
+    <string name="pregunta_dos_newton_teorico">The weight of a body is the force that gravity exerts on said body at an acceleration</string>
+
+    <string name="pregunta_tres_newton_teorico">Inertia is the tendency of bodies to maintain the state of movement or rest in which they find themselves</string>
+
+    <string name="pregunta_cuatro_newton_teorico">What is Newton\'s second law?</string>
+    <string name="respuesta1_pregunta4_examteorico_newton">The acceleration increases when it is submerged in some liquid.</string>
+    <string name="respuesta2_pregunta4_examteorico_newton">It is a force that appears when there are two bodies in contact.</string>
+    <string name="respuesta3_pregunta4_examteorico_newton">As all matter is in motion and movement is absolute.</string>
+    <string name="respuesta4_pregunta4_examteorico_newton">The acceleration that a body experiences is directly proportional to the force acting on it and inversely proportional to its mass</string>
+
+    <string name="pregunta_cinco_newton_teorico">What is the friction force?</string>
+    <string name="respuesta1_pregunta5_examteorico_newton">It is neutral</string>
+    <string name="respuesta2_pregunta5_examteorico_newton">It is when ropes (tension) are used</string>
+    <string name="respuesta3_pregunta5_examteorico_newton">It is the opposition to the movement of bodies and occurs in all known means.</string>
+    <string name="respuesta4_pregunta5_examteorico_newton">It is a fictitious force that appears when the movement of a body in a rotating reference system is described.</string>
+
+    <string name="pregunta_seis_newton_teorico">Is the equality F = M.A the mathematical expression of?</string>
+    <string name="respuesta1_pregunta6_examteorico_newton">Newton\'s second law.</string>
+    <string name="respuesta2_pregunta6_examteorico_newton">Newton\'s first law.</string>
+    <string name="respuesta3_pregunta6_examteorico_newton">Newton\'s third law.</string>
+    <string name="respuesta4_pregunta6_examteorico_newton">Newton\'s fourth law.</string>
+
+    <string name="pregunta_siete_newton_teorico">If a force does not act on a body or the results of the acting forces is zero?</string>
+    <string name="respuesta1_pregunta7_examteorico_newton">The body does not move, the body moves with a uniform rectilinear movement.</string>
+    <string name="respuesta2_pregunta7_examteorico_newton">It moved</string>
+    <string name="respuesta3_pregunta7_examteorico_newton">The body moves with a uniformly accelerated rectilinear movement.</string>
+    <string name="respuesta4_pregunta7_examteorico_newton">The body moves with a rectilinear movement uniformly retarded.</string>
+
+    <string name="pregunta_ocho_newton_teorico">Newton\'s first law is also known as how?</string>
+    <string name="respuesta1_pregunta8_examteorico_newton">Energy principle</string>
+    <string name="respuesta2_pregunta8_examteorico_newton">Universal gravitational principle.</string>
+    <string name="respuesta3_pregunta8_examteorico_newton">Principle of conservation of the mass.</string>
+    <string name="respuesta4_pregunta8_examteorico_newton">Principle of inertia.</string>
+
+    <string name="pregunta_nueve_newton_teorico">If a body is at rest?</string>
+    <string name="respuesta1_pregunta9_examteorico_newton">No force acts on it. The resultant of the forces acting on him is null.</string>
+    <string name="respuesta2_pregunta9_examteorico_newton">All the forcers acts.</string>
+    <string name="respuesta3_pregunta9_examteorico_newton">Only one force acts on him.</string>
+    <string name="respuesta4_pregunta9_examteorico_newton">Only two forces act on it that are counteracted.</string>
+
+    <string name="pregunta_diez_newton_teorico">Is a Newton?</string>
+    <string name="respuesta1_pregunta10_examteorico_newton">The force applied to a body of mass 1 g produces an acceleration of 1 m/s²</string>
+    <string name="respuesta2_pregunta10_examteorico_newton">The force applied to a body of mass 1 kg produces an acceleration of 1 m/s²</string>
+    <string name="respuesta3_pregunta10_examteorico_newton">The force applied on a body of mass 1 kg produces an acceleration of 1 cm/s²</string>
+    <string name="respuesta4_pregunta10_examteorico_newton">The force applied on a body of mass 1 g produces an acceleration of 1 mm/s²</string>
+
+   <!--TODO: edite aqui el examen practico de newton-->
+    <string name="problema1_newton_practico">A 900 kg car travels at 20m/s on a flat road. What is the magnitude of a constant retarding force necessary to stop the car in a distance of 30m? (suggestion: first calculate the deceleration.)</string>
+    <string name="problema2_newton_practico">A rope passes over a pulley without friction and with negligible mass. A 4.0 kg object hangs on one end and on the other a 12 kg object. Calculate the acceleration and tension of the rope.</string>
+    <string name="problema3_newton_practico">An elevator part of the rest and goes up with a constant acceleration. It moves 2.0cm in the first 0.60s. a passenger in the elevator holds a 3 kg package with a rope. What is the tension in the rope during acceleration?</string>
+    <string name="problema4_newton_practico">Once lit, a small rocket engine of a spacecraft exerts a constant force of 10 N for 7.80 s. During the time it burns, the rocket makes the 100-kg ship accelerate evenly. Determine that acceleration.</string>
+    <string name="problema5_newton_practico">A bullet of 12.0 g is accelerated from rest to a speed of 700m / s when traveling 20.0cm inside the rifle barrel. Assuming that the acceleration is constant, how large should the accelerating force be?</string>
+    <string name="fisiapp_2017_all_the_rights_reserved">FisiApp \n\n © 2017 All the rights reserved</string>
+
 
 </resources>
